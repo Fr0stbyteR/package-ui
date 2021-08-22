@@ -145,7 +145,7 @@ export default class waveform extends UIObject<{}, WaveformInternalState, [Patch
         this.on("inlet", async ({ data, inlet }) => {
             if (inlet === 0) {
                 if (data instanceof PatcherAudio) {
-                    this.setState({ audio: data });
+                    this._.audio = data;
                     this.updateUI(this._);
                     this.updateProps({ selRange: null, viewRange: [0, data.length], cursor: 0 });
                 } else {

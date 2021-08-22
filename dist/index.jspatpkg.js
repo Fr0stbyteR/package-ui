@@ -1210,9 +1210,7 @@ class waveform extends _base__WEBPACK_IMPORTED_MODULE_0__.default {
 
       if (inlet === 0) {
         if (data instanceof _sdk__WEBPACK_IMPORTED_MODULE_2__.PatcherAudio) {
-          this.setState({
-            audio: data
-          });
+          this._.audio = data;
           this.updateUI(this._);
           this.updateProps({
             selRange: null,
