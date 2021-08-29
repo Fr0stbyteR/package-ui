@@ -1,6 +1,6 @@
 {
   "name": "@jspatcher/package-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The UI package for JSPatcher",
   "main": "dist/index.js",
   "scripts": {
