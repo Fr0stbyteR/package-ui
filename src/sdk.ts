@@ -43,3 +43,4 @@ export interface BaseObject extends InstanceType<typeof BaseObject> {}
 export interface TransmitterNode extends InstanceType<typeof TransmitterNode> {}
 export interface TemporalAnalyserNode extends InstanceType<typeof TemporalAnalyserNode> {}
 export interface SpectralAnalyserNode extends InstanceType<typeof SpectralAnalyserNode> {}
+export interface CanvasUI extends InstanceType<typeof CanvasUI> {}
