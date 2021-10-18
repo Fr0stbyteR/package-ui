@@ -177,6 +177,6 @@ export default class NumberBox extends UIObject<{}, NumberBoxState, [number | Ba
         this.on("propsUpdated", () => {
             this.validateValue(this.state.value);
             this.updateUI({ value: this.state.value });
-        })
+        });
     }
 }

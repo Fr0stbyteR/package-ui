@@ -9,7 +9,7 @@ export interface SliderUIState extends SliderState, CanvasUIState, SliderProps {
     inTouch: boolean;
 }
 
-// https://github.com/Cycling74/miraweb/blob/master/src/js/objects/number.js
+// https://github.com/Cycling74/miraweb/blob/master/src/js/objects/slider.js
 export default class SliderUI extends CanvasUI<slider, {}, SliderUIState> {
     refCanvasUI = React.createRef<CanvasUI>();
     state: SliderUIState = {

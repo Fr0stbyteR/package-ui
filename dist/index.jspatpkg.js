@@ -956,14 +956,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
 // Imports
 
 
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, ".patcher div.box-ui > div.package-ui.package-ui-code {\n  height: 100%;\n  width: 100%; }\n\n.patcher div.box-ui > div.package-ui.box-ui-button.box-ui-container {\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n  overflow: auto;\n  padding: 0px;\n  margin: 0px; }\n\n.patcher div.box-ui > div.package-ui.box-ui-button > .box-ui-text-container {\n  display: flex;\n  flex: 0 0 auto;\n  padding: 4px 5px;\n  width: 100%;\n  font-family: Lato, Tahoma, sans-serif;\n  font-size: 12px;\n  text-align: left;\n  margin: 0px;\n  overflow-wrap: break-word;\n  cursor: default;\n  user-select: none;\n  -webkit-user-select: none; }\n  .patcher div.box-ui > div.package-ui.box-ui-button > .box-ui-text-container:first-child {\n    border-top-width: 4px; }\n  .patcher div.box-ui > div.package-ui.box-ui-button > .box-ui-text-container:last-child {\n    border-bottom-width: 4px; }\n  .patcher div.box-ui > div.package-ui.box-ui-button > .box-ui-text-container > span {\n    position: relative;\n    word-break: break-all;\n    width: 100%;\n    line-height: 14px;\n    font-weight: normal;\n    color: black; }\n    .patcher div.box-ui > div.package-ui.box-ui-button > .box-ui-text-container > span.editing {\n      pointer-events: auto;\n      cursor: text;\n      user-select: auto;\n      -webkit-user-select: auto; }\n    .patcher div.box-ui > div.package-ui.box-ui-button > .box-ui-text-container > span:empty::before {\n      content: \"\\200b\"; }\n    .patcher div.box-ui > div.package-ui.box-ui-button > .box-ui-text-container > span::selection {\n      background-color: #004eff;\n      color: white; }\n  .patcher div.box-ui > div.package-ui.box-ui-button > .box-ui-text-container i.icon {\n    line-height: 14px; }\n\n.patcher div.box-ui > div.package-ui.package-ui-menu > .dropdown {\n  user-select: none;\n  -webkit-user-select: none;\n  font-size: 12px;\n  padding: 4px 15px 4px 5px;\n  min-height: auto; }\n  .patcher div.box-ui > div.package-ui.package-ui-menu > .dropdown > .dropdown.icon {\n    padding: 5px 5px; }\n  .patcher div.box-ui > div.package-ui.package-ui-menu > .dropdown > .menu > .item {\n    user-select: none;\n    -webkit-user-select: none;\n    font-size: 12px;\n    padding: 4px 5px !important; }\n    .patcher div.box-ui > div.package-ui.package-ui-menu > .dropdown > .menu > .item.active {\n      font-weight: 600; }\n\n.patcher.unlocked div.box.selected > div.box-ui > div.package-ui.box-ui-button:hover, .patcher.unlocked div.box.selected > div.box-ui > div.package-ui.box-ui-button:active {\n  background-color: #e0e1e2; }\n\n.patcher.unlocked div.box.selected > div.box-ui > div.package-ui.box-ui-button > .box-ui-text-container {\n  pointer-events: auto; }\n\n.patcher.unlocked div.box.selected > div.box-ui > div.package-ui > span {\n  pointer-events: auto; }\n", "",{"version":3,"sources":["webpack://./src/ui/ui.scss"],"names":[],"mappings":"AAAA;EAEQ,YAAY;EACZ,WAAW,EAAA;;AAHnB;EAOY,aAAa;EACb,sBAAsB;EACtB,YAAY;EACZ,cAAc;EACd,YAAY;EACZ,WAAW,EAAA;;AAZvB;EAeY,aAAa;EACb,cAAc;EACd,gBAAgB;EAChB,WAAW;EACX,qCAAqC;EACrC,eAAe;EACf,gBAAgB;EAChB,WAAW;EACX,yBAAyB;EACzB,eAAe;EACf,iBAAiB;EACjB,yBAAyB,EAAA;EA1BrC;IA4BgB,qBAAqB,EAAA;EA5BrC;IA+BgB,wBAAwB,EAAA;EA/BxC;IAkCgB,kBAAkB;IAClB,qBAAqB;IACrB,WAAW;IACX,iBAAiB;IACjB,mBAAmB;IACnB,YAAY,EAAA;IAvC5B;MAyCoB,oBAAoB;MACpB,YAAY;MACZ,iBAAiB;MACjB,yBAAyB,EAAA;IA5C7C;MA+CoB,gBAAgB,EAAA;IA/CpC;MAkDoB,yBAAyB;MACzB,YAAY,EAAA;EAnDhC;IAuDgB,iBAAiB,EAAA;;AAvDjC;EA6DY,iBAAiB;EACjB,yBAAyB;EACzB,eAAe;EACf,yBAAyB;EACzB,gBAAgB,EAAA;EAjE5B;IAmEgB,gBAAgB,EAAA;EAnEhC;IAsEgB,iBAAiB;IACjB,yBAAyB;IACzB,eAAe;IACf,2BAA0B,EAAA;IAzE1C;MA2EoB,gBAAgB,EAAA;;AAMpC;EAGY,yBAAyB,EAAA;;AAHrC;EAMY,oBAAoB,EAAA;;AANhC;EAUQ,oBAAoB,EAAA","sourcesContent":[".patcher div.box-ui > div.package-ui {\n    &.package-ui-code {\n        height: 100%;\n        width: 100%;\n    }\n    &.box-ui-button {\n        &.box-ui-container {\n            display: flex;\n            flex-direction: column;\n            height: 100%;\n            overflow: auto;\n            padding: 0px;\n            margin: 0px;\n        }\n        & > .box-ui-text-container {\n            display: flex;\n            flex: 0 0 auto;\n            padding: 4px 5px;\n            width: 100%;\n            font-family: Lato, Tahoma, sans-serif;\n            font-size: 12px;\n            text-align: left;\n            margin: 0px;\n            overflow-wrap: break-word;\n            cursor: default;\n            user-select: none;\n            -webkit-user-select: none;\n            &:first-child {\n                border-top-width: 4px;\n            }\n            &:last-child {\n                border-bottom-width: 4px;\n            }\n            & > span {\n                position: relative;\n                word-break: break-all;\n                width: 100%;\n                line-height: 14px;\n                font-weight: normal;\n                color: black;\n                &.editing {\n                    pointer-events: auto;\n                    cursor: text;\n                    user-select: auto;\n                    -webkit-user-select: auto;\n                }\n                &:empty::before {\n                    content: \"\\200b\";\n                }\n                &::selection {\n                    background-color: #004eff;\n                    color: white;\n                }\n            }\n            i.icon {\n                line-height: 14px;\n            }\n        }\n    }\n    &.package-ui-menu {\n        & > .dropdown {\n            user-select: none;\n            -webkit-user-select: none;\n            font-size: 12px;\n            padding: 4px 15px 4px 5px;\n            min-height: auto;\n            & > .dropdown.icon {\n                padding: 5px 5px;\n            }\n            & > .menu > .item {\n                user-select: none;\n                -webkit-user-select: none;\n                font-size: 12px;\n                padding: 4px 5px!important;\n                &.active {\n                    font-weight: 600;\n                }\n            }\n        }\n    }\n}\n.patcher.unlocked div.box.selected > div.box-ui > div.package-ui {\n    &.box-ui-button {\n        &:hover, &:active {\n            background-color: #e0e1e2;\n        }\n        & > .box-ui-text-container {\n            pointer-events: auto;\n        }\n    }\n    & > span {\n        pointer-events: auto;\n    }\n}"],"sourceRoot":""}]);
 // Exports
@@ -985,37 +985,55 @@ ___CSS_LOADER_EXPORT___.push([module.id, ".patcher div.box-ui > div.package-ui.p
   MIT License http://www.opensource.org/licenses/mit-license.php
   Author Tobias Koppers @sokra
 */
-// css base code, injected by the css-loader
-// eslint-disable-next-line func-names
 module.exports = function (cssWithMappingToString) {
   var list = []; // return the list of modules as css string
 
   list.toString = function toString() {
     return this.map(function (item) {
-      var content = cssWithMappingToString(item);
+      var content = "";
+      var needLayer = typeof item[5] !== "undefined";
+
+      if (item[4]) {
+        content += "@supports (".concat(item[4], ") {");
+      }
 
       if (item[2]) {
-        return "@media ".concat(item[2], " {").concat(content, "}");
+        content += "@media ".concat(item[2], " {");
+      }
+
+      if (needLayer) {
+        content += "@layer".concat(item[5].length > 0 ? " ".concat(item[5]) : "", " {");
+      }
+
+      content += cssWithMappingToString(item);
+
+      if (needLayer) {
+        content += "}";
+      }
+
+      if (item[2]) {
+        content += "}";
+      }
+
+      if (item[4]) {
+        content += "}";
       }
 
       return content;
     }).join("");
   }; // import a list of modules into the list
-  // eslint-disable-next-line func-names
 
 
-  list.i = function (modules, mediaQuery, dedupe) {
+  list.i = function i(modules, media, dedupe, supports, layer) {
     if (typeof modules === "string") {
-      // eslint-disable-next-line no-param-reassign
-      modules = [[null, modules, ""]];
+      modules = [[null, modules, undefined]];
     }
 
     var alreadyImportedModules = {};
 
     if (dedupe) {
-      for (var i = 0; i < this.length; i++) {
-        // eslint-disable-next-line prefer-destructuring
-        var id = this[i][0];
+      for (var _i = 0; _i < this.length; _i++) {
+        var id = this[_i][0];
 
         if (id != null) {
           alreadyImportedModules[id] = true;
@@ -1023,19 +1041,37 @@ module.exports = function (cssWithMappingToString) {
       }
     }
 
-    for (var _i = 0; _i < modules.length; _i++) {
-      var item = [].concat(modules[_i]);
+    for (var _i2 = 0; _i2 < modules.length; _i2++) {
+      var item = [].concat(modules[_i2]);
 
       if (dedupe && alreadyImportedModules[item[0]]) {
-        // eslint-disable-next-line no-continue
         continue;
       }
 
-      if (mediaQuery) {
-        if (!item[2]) {
-          item[2] = mediaQuery;
+      if (typeof layer !== "undefined") {
+        if (typeof item[5] === "undefined") {
+          item[5] = layer;
         } else {
-          item[2] = "".concat(mediaQuery, " and ").concat(item[2]);
+          item[1] = "@layer".concat(item[5].length > 0 ? " ".concat(item[5]) : "", " {").concat(item[1], "}");
+          item[5] = layer;
+        }
+      }
+
+      if (media) {
+        if (!item[2]) {
+          item[2] = media;
+        } else {
+          item[1] = "@media ".concat(item[2], " {").concat(item[1], "}");
+          item[2] = media;
+        }
+      }
+
+      if (supports) {
+        if (!item[4]) {
+          item[4] = "".concat(supports);
+        } else {
+          item[1] = "@supports (".concat(item[4], ") {").concat(item[1], "}");
+          item[4] = supports;
         }
       }
 
@@ -1048,38 +1084,24 @@ module.exports = function (cssWithMappingToString) {
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js":
-/*!************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/cssWithMappingToString.js ***!
-  \************************************************************************/
+/***/ "./node_modules/css-loader/dist/runtime/sourceMaps.js":
+/*!************************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/sourceMaps.js ***!
+  \************************************************************/
 /***/ ((module) => {
 
 "use strict";
 
 
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-module.exports = function cssWithMappingToString(item) {
-  var _item = _slicedToArray(item, 4),
-      content = _item[1],
-      cssMapping = _item[3];
+module.exports = function (item) {
+  var content = item[1];
+  var cssMapping = item[3];
 
   if (!cssMapping) {
     return content;
   }
 
   if (typeof btoa === "function") {
-    // eslint-disable-next-line no-undef
     var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(cssMapping))));
     var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
     var sourceMapping = "/*# ".concat(data, " */");
@@ -1130,8 +1152,8 @@ var __spreadValues = (a, b) => {
   return a;
 };
 
-const name = _package_info__WEBPACK_IMPORTED_MODULE_0__.default.name.split("/").pop().replace(/^package-/, "");
-const { author, license, keywords, version, description, jspatcher } = _package_info__WEBPACK_IMPORTED_MODULE_0__.default;
+const name = _package_info__WEBPACK_IMPORTED_MODULE_0__["default"].name.split("/").pop().replace(/^package-/, "");
+const { author, license, keywords, version, description, jspatcher } = _package_info__WEBPACK_IMPORTED_MODULE_0__["default"];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__spreadValues({ name, author, license, keywords, version, description }, jspatcher));
 
 
@@ -1179,7 +1201,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-class bpf extends _base__WEBPACK_IMPORTED_MODULE_0__.default {
+class bpf extends _base__WEBPACK_IMPORTED_MODULE_0__["default"] {
   subscribe() {
     super.subscribe();
     this.on("preInit", () => {
@@ -1301,7 +1323,7 @@ bpf.props = {
     isUIState: true
   }
 };
-bpf.UI = _ui_bpf__WEBPACK_IMPORTED_MODULE_2__.default;
+bpf.UI = _ui_bpf__WEBPACK_IMPORTED_MODULE_2__["default"];
 
 
 /***/ }),
@@ -1321,7 +1343,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sdk__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sdk */ "./src/sdk.ts");
 
 
-class code extends _base__WEBPACK_IMPORTED_MODULE_0__.default {
+class code extends _base__WEBPACK_IMPORTED_MODULE_0__["default"] {
   subscribe() {
     super.subscribe();
     this.on("preInit", () => {
@@ -1394,7 +1416,7 @@ var _a;
 
 
 
-class img extends _base__WEBPACK_IMPORTED_MODULE_0__.default {
+class img extends _base__WEBPACK_IMPORTED_MODULE_0__["default"] {
   constructor() {
     super(...arguments);
     this._ = { key: (_a = this.box.args[0]) == null ? void 0 : _a.toString(), image: void 0, file: void 0, url: "" };
@@ -1504,7 +1526,7 @@ img.props = {
     isUIState: true
   }
 };
-img.UI = _ui_img__WEBPACK_IMPORTED_MODULE_2__.default;
+img.UI = _ui_img__WEBPACK_IMPORTED_MODULE_2__["default"];
 
 
 /***/ }),
@@ -1542,7 +1564,7 @@ var __spreadValues = (a, b) => {
 
 
 
-class keyboard extends _base__WEBPACK_IMPORTED_MODULE_0__.default {
+class keyboard extends _base__WEBPACK_IMPORTED_MODULE_0__["default"] {
   constructor() {
     super(...arguments);
     this._ = { keys: this.flushed, selected: void 0 };
@@ -1689,7 +1711,7 @@ keyboard.props = {
     isUIState: true
   }
 };
-keyboard.UI = _ui_keyboard__WEBPACK_IMPORTED_MODULE_2__.default;
+keyboard.UI = _ui_keyboard__WEBPACK_IMPORTED_MODULE_2__["default"];
 
 
 /***/ }),
@@ -1709,7 +1731,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _base__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./base */ "./src/objects/base.ts");
 
 
-class menu extends _base__WEBPACK_IMPORTED_MODULE_1__.default {
+class menu extends _base__WEBPACK_IMPORTED_MODULE_1__["default"] {
   subscribe() {
     super.subscribe();
     this.on("preInit", () => {
@@ -1900,7 +1922,7 @@ menu.props = {
     isUIState: true
   }
 };
-menu.UI = _ui_menu__WEBPACK_IMPORTED_MODULE_0__.default;
+menu.UI = _ui_menu__WEBPACK_IMPORTED_MODULE_0__["default"];
 
 
 /***/ }),
@@ -1925,7 +1947,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-class message extends _base__WEBPACK_IMPORTED_MODULE_2__.default {
+class message extends _base__WEBPACK_IMPORTED_MODULE_2__["default"] {
   constructor() {
     super(...arguments);
     this._ = { buffer: new _sdk__WEBPACK_IMPORTED_MODULE_1__.Bang(), editing: false };
@@ -2004,7 +2026,316 @@ message.outlets = [{
   type: "anything",
   description: "Message to send"
 }];
-message.UI = _ui_message__WEBPACK_IMPORTED_MODULE_3__.default;
+message.UI = _ui_message__WEBPACK_IMPORTED_MODULE_3__["default"];
+
+
+/***/ }),
+
+/***/ "./src/objects/multislider.ts":
+/*!************************************!*\
+  !*** ./src/objects/multislider.ts ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ multislider)
+/* harmony export */ });
+/* harmony import */ var _sdk__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sdk */ "./src/sdk.ts");
+/* harmony import */ var _ui_multislider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ui/multislider */ "./src/ui/multislider.tsx");
+/* harmony import */ var _base__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./base */ "./src/objects/base.ts");
+
+
+
+class multislider extends _base__WEBPACK_IMPORTED_MODULE_2__["default"] {
+  constructor() {
+    super(...arguments);
+    this.state = { value: [0] };
+  }
+  toValidValue(valueIn) {
+    const type = this.getProp("setType");
+    const [min, max] = this.getProp("setMinMax");
+    return valueIn.map((value) => Math.min(max, Math.max(min, type === "Integer" ? Math.round(value || 0) : value || 0)));
+  }
+  validateValue(valueIn) {
+    const value = this.toValidValue(valueIn);
+    if (value === this.state.value)
+      return;
+    this.setState({ value });
+  }
+  outputValue() {
+    this.outlet(0, this.state.value);
+  }
+  onChangeFromUI({ value }) {
+    this.setState({ value });
+    this.outputValue();
+  }
+  async updateProps(propsIn, options) {
+    if ("setMinMax" in propsIn) {
+      const { setMinMax } = propsIn;
+      let [min, max] = setMinMax;
+      if (max < min)
+        [min, max] = [max, min];
+      propsIn.setMinMax = [min || 0, max || 0];
+    }
+    if ("size" in propsIn) {
+      const { size } = propsIn;
+      propsIn.size = Math.max(1, ~~size || 0);
+    }
+    return super.updateProps(propsIn, options);
+  }
+  subscribe() {
+    super.subscribe();
+    this.on("preInit", () => {
+      this.inlets = 1;
+      this.outlets = 2;
+    });
+    this.on("inlet", ({ data, inlet }) => {
+      if (inlet === 0) {
+        if (!(0,_sdk__WEBPACK_IMPORTED_MODULE_0__.isBang)(data)) {
+          const { value } = this.state;
+          if (typeof data === "number") {
+            value.fill(data);
+            this.validateValue(value);
+            this.updateUI({ value: this.state.value });
+            this.outputValue();
+            return;
+          } else if (_sdk__WEBPACK_IMPORTED_MODULE_0__.Utils.isNumberArray(data)) {
+            if (!data.length)
+              return;
+            this.setProps({ size: data.length });
+            this.validateValue(data);
+            this.updateUI({ value: this.state.value });
+            this.outputValue();
+            return;
+          } else if (typeof data === "string") {
+            if (data === "sum") {
+              this.outlet(1, _sdk__WEBPACK_IMPORTED_MODULE_0__.BufferUtils.sum(value));
+              return;
+            } else if (data === "max") {
+              const [, max] = this.getProp("setMinMax");
+              const { value: value2 } = this.state;
+              value2.fill(max);
+              this.validateValue(value2);
+              this.updateUI({ value: this.state.value });
+              this.outputValue();
+              return;
+            } else if (data === "min") {
+              const [min] = this.getProp("setMinMax");
+              const { value: value2 } = this.state;
+              value2.fill(min);
+              this.validateValue(value2);
+              this.updateUI({ value: this.state.value });
+              this.outputValue();
+              return;
+            } else if (data === "minimum") {
+              this.outlet(1, Math.min(...value));
+              return;
+            } else if (data === "maximum") {
+              this.outlet(1, Math.max(...value));
+              return;
+            }
+          } else if (typeof data === "object") {
+            if ("fetch" in data) {
+              const { fetch } = data;
+              this.outlet(1, value[~~fetch - 1]);
+              return;
+            } else if ("set" in data) {
+              const { set } = data;
+              const [idx, val] = set;
+              if (idx >= 1 && idx <= value.length)
+                value[~~idx - 1] = val;
+              this.validateValue(value);
+              this.updateUI({ value: this.state.value });
+              return;
+            } else if ("setlist" in data) {
+              const { setlist } = data;
+              if (!setlist.length || !_sdk__WEBPACK_IMPORTED_MODULE_0__.Utils.isNumberArray(setlist))
+                return;
+              this.setProps({ size: setlist.length });
+              this.validateValue(setlist);
+              this.updateUI({ value: this.state.value });
+            } else if ("select" in data) {
+              const { select } = data;
+              for (let i = 0; i + 1 < select.length; i += 2) {
+                const idx = select[i];
+                const val = select[i + 1];
+                if (idx >= 1 && idx <= value.length)
+                  value[~~idx - 1] = val;
+              }
+              this.validateValue(value);
+              this.updateUI({ value: this.state.value });
+              this.outputValue();
+              return;
+            }
+          }
+        }
+        this.outputValue();
+      }
+    });
+    this.on("propsUpdated", ({ props, oldProps }) => {
+      if (props.size !== oldProps.size)
+        this.setState({ value: [...this.state.value, ...new Array(props.size).fill(this.getProp("setMinMax")[0])].slice(0, props.size) });
+      this.validateValue(this.state.value);
+      this.updateUI({ value: this.state.value });
+    });
+    this.on("postInit", () => {
+      this.setState({ value: new Array(this.getProp("size")).fill(this.getProp("setMinMax")[0]) });
+    });
+  }
+}
+multislider.description = "Move a slider to output values";
+multislider.inlets = [{
+  type: "anything",
+  isHot: true,
+  description: 'number[] | number | Bang | Partial<{ fetch: number; set: [number, number]; setlist: number[]; select: number[]; }> | "max" | "maximum" | "min" | "minimum" | "sum"'
+}];
+multislider.outlets = [{
+  type: "object",
+  description: "When a multislider receives a list, int, or float in its inlet, it outputs a list of its current values."
+}, {
+  type: "number",
+  description: "The value of a numbered slider specified by the fetch message."
+}];
+multislider.props = {
+  bgColor: {
+    type: "color",
+    default: "rgb(51, 51, 51)",
+    description: "Specifies the background color of the multislider.",
+    isUIState: true
+  },
+  peakColor: {
+    type: "color",
+    default: "rgb(89, 89, 89)",
+    description: "Specifies the peak indicators when Peak-Hold display is turned on.",
+    isUIState: true
+  },
+  sliderColor: {
+    type: "color",
+    default: "rgb(206, 229, 232)",
+    description: "Specifies the slider color of the multislider object.",
+    isUIState: true
+  },
+  candycane: {
+    type: "number",
+    default: 1,
+    description: "Use multiple colors for adjacent sliders.",
+    isUIState: true
+  },
+  candicane2: {
+    type: "color",
+    default: "rgb(37, 53, 91)",
+    description: "Specifies the 2nd slider color in candycane mode.",
+    isUIState: true
+  },
+  candicane3: {
+    type: "color",
+    default: "rgb(75, 106, 183)",
+    description: "Specifies the 3rd slider color in candycane mode.",
+    isUIState: true
+  },
+  candicane4: {
+    type: "color",
+    default: "rgb(112, 159, 19)",
+    description: "Specifies the 4th slider color in candycane mode.",
+    isUIState: true
+  },
+  candicane5: {
+    type: "color",
+    default: "rgb(150, 211, 110)",
+    description: "Specifies the 5th slider color in candycane mode.",
+    isUIState: true
+  },
+  candicane6: {
+    type: "color",
+    default: "rgb(225, 62, 38)",
+    description: "Specifies the 6th slider color in candycane mode.",
+    isUIState: true
+  },
+  candicane7: {
+    type: "color",
+    default: "rgb(225, 62, 38)",
+    description: "Specifies the 7th slider color in candycane mode.",
+    isUIState: true
+  },
+  candicane8: {
+    type: "color",
+    default: "rgb(7, 115, 129)",
+    description: "Specifies the 8th` slider color in candycane mode.",
+    isUIState: true
+  },
+  contData: {
+    type: "boolean",
+    default: false,
+    description: "Toggles continuous output mode for non-scrolling display styles.",
+    isUIState: true
+  },
+  drawPeaks: {
+    type: "boolean",
+    default: false,
+    description: "Toggles setting the multislider to draw peak-output lines when displaying slider values.",
+    isUIState: true
+  },
+  ghostBar: {
+    type: "number",
+    default: 0,
+    description: 'Enables the drawing of a "ghost" bar when mode the multislider object is in Thin Line mode.',
+    isUIState: true
+  },
+  orientation: {
+    type: "enum",
+    enums: ["Horizontal", "Vertical"],
+    default: "Vertical",
+    description: "Set the sliders to be drawn with a horizontal or vertical orientation.",
+    isUIState: true
+  },
+  setMinMax: {
+    type: "object",
+    default: [-1, 1],
+    description: "Sets the low and high range values for the multislider object.",
+    isUIState: true
+  },
+  setStyle: {
+    type: "enum",
+    enums: ["Thin Line", "Bar", "Point Scroll", "Line Scroll", "Reverse Point Scroll", "Reverse Line Scroll"],
+    default: "Thin Line",
+    description: "Sets the display style of the multislider object.",
+    isUIState: true
+  },
+  setType: {
+    type: "enum",
+    enums: ["Integer", "Floating-point"],
+    default: "Floating-point",
+    description: "Sets the multislider object for integer or floating point operation.",
+    isUIState: true
+  },
+  signed: {
+    type: "boolean",
+    default: false,
+    description: "Sets the signed or unsigned display mode for bar sliders.",
+    isUIState: true
+  },
+  size: {
+    type: "number",
+    default: 1,
+    description: "Sets the number of sliders the multislider object has.",
+    isUIState: true
+  },
+  spacing: {
+    type: "number",
+    default: 1,
+    description: "Sets the amount of space (in pixels) between sliders.",
+    isUIState: true
+  },
+  thickness: {
+    type: "number",
+    default: 2,
+    description: 'Sets the pen thickness of "thin line"style sliders.',
+    isUIState: true
+  }
+};
+multislider.UI = _ui_multislider__WEBPACK_IMPORTED_MODULE_1__["default"];
 
 
 /***/ }),
@@ -2026,7 +2357,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-class NumberBox extends _base__WEBPACK_IMPORTED_MODULE_2__.default {
+class NumberBox extends _base__WEBPACK_IMPORTED_MODULE_2__["default"] {
   constructor() {
     super(...arguments);
     this.state = { value: 0 };
@@ -2187,7 +2518,7 @@ NumberBox.props = {
     isUIState: true
   }
 };
-NumberBox.UI = _ui_number__WEBPACK_IMPORTED_MODULE_1__.default;
+NumberBox.UI = _ui_number__WEBPACK_IMPORTED_MODULE_1__["default"];
 
 
 /***/ }),
@@ -2209,7 +2540,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-class slider extends _base__WEBPACK_IMPORTED_MODULE_2__.default {
+class slider extends _base__WEBPACK_IMPORTED_MODULE_2__["default"] {
   constructor() {
     super(...arguments);
     this.state = { value: 0 };
@@ -2355,7 +2686,7 @@ slider.props = {
     isUIState: true
   }
 };
-slider.UI = _ui_slider__WEBPACK_IMPORTED_MODULE_1__.default;
+slider.UI = _ui_slider__WEBPACK_IMPORTED_MODULE_1__["default"];
 
 
 /***/ }),
@@ -2377,7 +2708,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-class view extends _base__WEBPACK_IMPORTED_MODULE_2__.default {
+class view extends _base__WEBPACK_IMPORTED_MODULE_2__["default"] {
   constructor() {
     super(...arguments);
     this._ = { children: [] };
@@ -2439,7 +2770,7 @@ view.props = {
     isUIState: true
   }
 };
-view.UI = _ui_view__WEBPACK_IMPORTED_MODULE_1__.default;
+view.UI = _ui_view__WEBPACK_IMPORTED_MODULE_1__["default"];
 
 
 /***/ }),
@@ -2461,7 +2792,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-class waveform extends _base__WEBPACK_IMPORTED_MODULE_0__.default {
+class waveform extends _base__WEBPACK_IMPORTED_MODULE_0__["default"] {
   constructor() {
     super(...arguments);
     this._ = { audio: void 0 };
@@ -2590,7 +2921,7 @@ waveform.props = {
     isUIState: true
   }
 };
-waveform.UI = _ui_waveform__WEBPACK_IMPORTED_MODULE_1__.default;
+waveform.UI = _ui_waveform__WEBPACK_IMPORTED_MODULE_1__["default"];
 
 
 /***/ }),
@@ -3630,7 +3961,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./button */ "./src/ui/button.tsx");
 
-class MessageUI extends _button__WEBPACK_IMPORTED_MODULE_0__.default {
+class MessageUI extends _button__WEBPACK_IMPORTED_MODULE_0__["default"] {
   constructor() {
     super(...arguments);
     this.handleChanged = (text) => this.object.handleUpdateArgs([text]);
@@ -3641,6 +3972,521 @@ class MessageUI extends _button__WEBPACK_IMPORTED_MODULE_0__.default {
   }
 }
 MessageUI.editableOnUnlock = true;
+
+
+/***/ }),
+
+/***/ "./src/ui/multislider.tsx":
+/*!********************************!*\
+  !*** ./src/ui/multislider.tsx ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ MultisliderUI)
+/* harmony export */ });
+/* harmony import */ var _sdk__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sdk */ "./src/sdk.ts");
+/* harmony import */ var color_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! color-js */ "./node_modules/color-js/color.js");
+/* harmony import */ var color_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(color_js__WEBPACK_IMPORTED_MODULE_1__);
+var __defProp = Object.defineProperty;
+var __defProps = Object.defineProperties;
+var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
+var __getOwnPropSymbols = Object.getOwnPropertySymbols;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __propIsEnum = Object.prototype.propertyIsEnumerable;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __spreadValues = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (__hasOwnProp.call(b, prop))
+      __defNormalProp(a, prop, b[prop]);
+  if (__getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(b)) {
+      if (__propIsEnum.call(b, prop))
+        __defNormalProp(a, prop, b[prop]);
+    }
+  return a;
+};
+var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
+
+
+const _MultisliderUI = class extends _sdk__WEBPACK_IMPORTED_MODULE_0__.CanvasUI {
+  constructor() {
+    super(...arguments);
+    this.refCanvasUI = _sdk__WEBPACK_IMPORTED_MODULE_0__.React.createRef();
+    this.state = __spreadProps(__spreadValues({}, this.state), {
+      value: this.object.state.value,
+      focus: false,
+      inTouch: false
+    });
+    this.handleKeyDown = (e) => {
+    };
+    this.handleKeyUp = (e) => {
+    };
+    this.touches = {};
+    this.handleTouchStart = (e) => {
+      e.currentTarget.focus();
+      const rect = e.currentTarget.getBoundingClientRect();
+      const handleTouchMove = (e2) => {
+        e2.preventDefault();
+        Array.from(e2.changedTouches).forEach((touch) => {
+          const id = touch.identifier;
+          const clientX = touch.clientX;
+          const clientY = touch.clientY;
+          let { fromX, fromY, prevX, prevY } = this.touches[id];
+          const movementX = clientX - prevX;
+          const movementY = clientY - prevY;
+          prevX = clientX;
+          prevY = clientY;
+          const x = clientX - rect.left;
+          const y = clientY - rect.top;
+          this.touches[id].prevX = prevX;
+          this.touches[id].prevY = prevY;
+          this.handlePointerDrag({ id, x, y, fromX, fromY, movementX, movementY, originalEvent: e2 });
+        });
+      };
+      const handleTouchEnd = (e2) => {
+        e2.preventDefault();
+        Array.from(e2.changedTouches).forEach((touch) => {
+          const id = touch.identifier;
+          const x = touch.clientX - rect.left;
+          const y = touch.clientY - rect.top;
+          this.handlePointerUp({ id, x, y, originalEvent: e2 });
+          delete this.touches[id];
+        });
+        if (!e2.touches.length) {
+          document.removeEventListener("touchmove", handleTouchMove);
+          document.removeEventListener("touchend", handleTouchEnd);
+        }
+      };
+      if (!Object.keys(this.touches).length) {
+        document.addEventListener("touchmove", handleTouchMove, { passive: false });
+        document.addEventListener("touchend", handleTouchEnd, { passive: false });
+      }
+      Array.from(e.touches).forEach((touch) => {
+        const id = touch.identifier;
+        let prevX = touch.clientX;
+        let prevY = touch.clientY;
+        const fromX = prevX - rect.left;
+        const fromY = prevY - rect.top;
+        this.handlePointerDown({ id, x: fromX, y: fromY, originalEvent: e });
+        this.touches[id] = { prevX, prevY, fromX, fromY };
+      });
+    };
+    this.handleWheel = (e) => {
+    };
+    this.handleClick = (e) => {
+    };
+    this.handleMouseDown = (e) => {
+      e.preventDefault();
+      e.currentTarget.focus();
+      const rect = e.currentTarget.getBoundingClientRect();
+      const fromX = e.clientX - rect.left;
+      const fromY = e.clientY - rect.top;
+      this.handlePointerDown({ id: null, x: fromX, y: fromY, originalEvent: e });
+      const handleMouseMove = (e2) => {
+        e2.preventDefault();
+        const x = e2.clientX - rect.left;
+        const y = e2.clientY - rect.top;
+        this.handlePointerDrag({ id: null, x, y, fromX, fromY, movementX: e2.movementX, movementY: e2.movementY, originalEvent: e2 });
+      };
+      const handleMouseUp = (e2) => {
+        e2.preventDefault();
+        const x = e2.clientX - rect.left;
+        const y = e2.clientY - rect.top;
+        this.handlePointerUp({ id: null, x, y, originalEvent: e2 });
+        document.removeEventListener("mousemove", handleMouseMove);
+        document.removeEventListener("mouseup", handleMouseUp);
+      };
+      document.addEventListener("mousemove", handleMouseMove);
+      document.addEventListener("mouseup", handleMouseUp);
+    };
+    this.handleMouseOver = (e) => {
+    };
+    this.handleMouseOut = (e) => {
+    };
+    this.handleContextMenu = (e) => {
+    };
+    this.mouseDownValue = this.state.value;
+    this._lastPointerSlider = {};
+    this.peaks = [];
+    this._values = [];
+    this.interactionRect = [0, 0, 0, 0];
+    this.handlePointerDown = (e) => {
+      const { value, size, setStyle } = this.state;
+      if (setStyle === "Point Scroll" || setStyle === "Line Scroll" || setStyle === "Reverse Point Scroll" || setStyle === "Reverse Line Scroll")
+        return;
+      const sliderIndex = this._getSliderIndex(e);
+      if (sliderIndex < 0 || sliderIndex >= size)
+        return;
+      const newVal = this._getValue(e);
+      value[sliderIndex] = newVal;
+      this._lastPointerSlider[e.id] = sliderIndex;
+      this.setValueToOutput(value);
+    };
+    this.handlePointerDrag = (e) => {
+      const { value, contData, size, setType, setStyle } = this.state;
+      if (setStyle === "Point Scroll" || setStyle === "Line Scroll" || setStyle === "Reverse Point Scroll" || setStyle === "Reverse Line Scroll")
+        return;
+      let sliderIndex = this._getSliderIndex(e);
+      const newVal = this._getValue(e);
+      const lastIndex = this._lastPointerSlider[e.id] || sliderIndex;
+      if (lastIndex !== sliderIndex) {
+        sliderIndex = Math.min(size - 1, Math.max(0, sliderIndex));
+        const lastIndexVal = value[lastIndex];
+        let stepWidth = sliderIndex - lastIndex;
+        stepWidth = stepWidth < 0 ? -stepWidth : stepWidth;
+        const stepVal = (newVal - lastIndexVal) / stepWidth;
+        if (lastIndex < sliderIndex) {
+          for (let i = 0; i <= stepWidth; i++) {
+            if (setType === "Integer")
+              value[lastIndex + i] = Math.round(lastIndexVal + i * stepVal);
+            else
+              value[lastIndex + i] = lastIndexVal + i * stepVal;
+          }
+        } else if (lastIndex > sliderIndex) {
+          for (let i = 0; i <= stepWidth; i++) {
+            if (setType === "Integer")
+              value[lastIndex - i] = Math.round(value[lastIndex - i] = lastIndexVal + i * stepVal);
+            else
+              value[lastIndex - i] = lastIndexVal + i * stepVal;
+          }
+        }
+      } else {
+        if (sliderIndex < 0 || sliderIndex >= size)
+          return;
+        if (setType === "Integer")
+          value[sliderIndex] = Math.round(newVal);
+        else
+          value[sliderIndex] = newVal;
+      }
+      this._lastPointerSlider[e.id] = sliderIndex;
+      const valueOut = this.object.toValidValue(value);
+      this.setState({ value: valueOut });
+      if (contData)
+        this.props.object.onChangeFromUI({ value: valueOut });
+    };
+    this.handlePointerUp = (e) => {
+      const { value, contData, setStyle } = this.state;
+      if (setStyle === "Point Scroll" || setStyle === "Line Scroll" || setStyle === "Reverse Point Scroll" || setStyle === "Reverse Line Scroll")
+        return;
+      delete this._lastPointerSlider[e.id];
+      if (!contData)
+        this.setValueToOutput(value);
+    };
+    this.handleFocusIn = (e) => this.setState({ focus: true });
+    this.handleFocusOut = () => {
+      this.setState({ focus: false });
+    };
+    this.onPaint = (ctx) => {
+      if (!ctx)
+        return;
+      let {
+        ghostBar,
+        setStyle,
+        candycane,
+        size,
+        setMinMax,
+        orientation,
+        bgColor,
+        sliderColor,
+        candicane2,
+        candicane3,
+        candicane4,
+        candicane5,
+        candicane6,
+        candicane7,
+        candicane8,
+        peakColor,
+        drawPeaks,
+        signed,
+        spacing,
+        thickness,
+        value
+      } = this.state;
+      const [width, height] = this.refCanvasUI.current.fullSize();
+      if (setStyle === "Bar") {
+        thickness = 2;
+      }
+      let colors = [sliderColor, candicane2, candicane3, candicane4, candicane5, candicane6, candicane7, candicane8];
+      colors = colors.concat(_MultisliderUI.CANDICANE_9_23);
+      const [min, max] = setMinMax;
+      const range = max - min;
+      const transparentColor = "transparent";
+      if (!this.peaks.length)
+        this.peaks = [...value];
+      if (setStyle === "Point Scroll" || setStyle === "Line Scroll" || setStyle === "Reverse Point Scroll" || setStyle === "Reverse Line Scroll") {
+        for (let i = 0; i < size; i++) {
+          if (!Array.isArray(this._values[i]))
+            this._values[i] = [];
+        }
+      }
+      if (orientation === "Horizontal") {
+        const sliderHeight = (height - spacing * (size + 1)) / size;
+        ctx.fillStyle = bgColor;
+        ctx.fillRect(0, 0, width, height);
+        let currY = spacing;
+        for (let i = 0; i < size; i++) {
+          let sliderX = width / range * (value[i] - min);
+          sliderX += thickness * 0.3;
+          sliderX = Math.min(Math.max(sliderX, thickness), width) - thickness / 2;
+          let zeroX = 0;
+          ctx.strokeStyle = colors[i % candycane];
+          ctx.lineWidth = thickness;
+          if (setStyle === "Bar" || setStyle === "Thin Line") {
+            ctx.beginPath();
+            ctx.moveTo(sliderX, currY);
+            ctx.lineTo(sliderX, currY + sliderHeight);
+            ctx.closePath();
+            ctx.stroke();
+          }
+          if (signed) {
+            if (value[i] > 0) {
+              zeroX = width / range * (0 - min);
+            } else {
+              zeroX = sliderX;
+              sliderX = width / range * (0 - min);
+            }
+          }
+          if ((setStyle === "Bar" || setStyle === "Thin Line") && drawPeaks) {
+            ctx.strokeStyle = peakColor;
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            if (value[i] > this.peaks[i]) {
+              ctx.moveTo(sliderX + thickness, currY);
+              ctx.lineTo(sliderX + thickness, currY + sliderHeight);
+              this.peaks[i] = value[i];
+            } else if (value[i] <= this.peaks[i]) {
+              ctx.moveTo(width / range * (this.peaks[i] - min) + thickness, currY);
+              ctx.lineTo(width / range * (this.peaks[i] - min) + thickness, currY + sliderHeight);
+            }
+            ctx.closePath();
+            ctx.stroke();
+          }
+          if (setStyle === "Bar" || setStyle === "Thin Line" && ghostBar > 0) {
+            if (setStyle === "Thin Line")
+              ctx.fillStyle = color_js__WEBPACK_IMPORTED_MODULE_1__(colors[i % candycane]).setAlpha(ghostBar / 100).toRGB();
+            else
+              ctx.fillStyle = colors[i % candycane];
+            ctx.fillRect(zeroX, currY, sliderX - zeroX, sliderHeight);
+          } else if (setStyle === "Point Scroll" || setStyle === "Reverse Point Scroll") {
+            ctx.fillStyle = colors[i % candycane];
+            for (let j = 0; j < this._values[i].length; j++) {
+              let cx = width / size / range * (this._values[i][j] - min);
+              let cy = setStyle === "Point Scroll" ? j : height - j;
+              ctx.beginPath();
+              ctx.ellipse(width / size * i + cx, cy, 0.5, 0.5, 0, 0, Math.PI * 2);
+              ctx.closePath();
+              ctx.fill();
+            }
+          } else if (setStyle === "Line Scroll" || setStyle === "Reverse Line Scroll") {
+            ctx.strokeStyle = colors[i % candycane];
+            for (let j = 0; j < this._values[i].length; j++) {
+              let cx = width / size / range * (this._values[i][j] - min);
+              let cy = setStyle === "Line Scroll" ? j : height - j;
+              let xZero;
+              if (max >= 0 && min >= 0) {
+                xZero = 0;
+              } else if (max < 0 && min < 0) {
+                xZero = 1;
+              } else {
+                xZero = -min / (max - min);
+              }
+              ctx.lineWidth = 1;
+              ctx.beginPath();
+              ctx.moveTo(width / size * (i + xZero), cy);
+              ctx.lineTo(width / size * i + cx, cy);
+              ctx.closePath();
+              ctx.stroke();
+            }
+          }
+          ctx.fillStyle = transparentColor;
+          ctx.fillRect(0, currY - spacing / 2, width + thickness, sliderHeight + spacing);
+          currY += sliderHeight + spacing;
+        }
+      } else if (orientation === "Vertical") {
+        let sliderWidth = (width - spacing * (size + 1)) / size;
+        ctx.fillStyle = bgColor;
+        if (setStyle === "Point Scroll" || setStyle === "Line Scroll" || setStyle === "Reverse Point Scroll" || setStyle === "Reverse Line Scroll")
+          ctx.fillRect(0, 0, width, height);
+        else
+          ctx.fillRect(0, 0, width, height);
+        let currX = spacing;
+        for (let i = 0; i < size; i++) {
+          let sliderY = height / range * (value[i] - min);
+          sliderY += thickness * 0.3;
+          sliderY = Math.min(Math.max(sliderY, thickness), height) - thickness / 2;
+          let zeroY = 0;
+          ctx.strokeStyle = colors[i % candycane];
+          ctx.lineWidth = thickness;
+          if (setStyle === "Bar" || setStyle === "Thin Line") {
+            ctx.beginPath();
+            ctx.moveTo(currX, height - sliderY);
+            ctx.lineTo(currX + sliderWidth, height - sliderY);
+            ctx.closePath();
+            ctx.stroke();
+          }
+          if (signed) {
+            if (value[i] > 0) {
+              zeroY = height / range * (0 - min);
+            } else {
+              zeroY = sliderY;
+              sliderY = height / range * (0 - min);
+            }
+          }
+          if ((setStyle === "Bar" || setStyle === "Thin Line") && drawPeaks) {
+            ctx.strokeStyle = peakColor;
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            if (value[i] > this.peaks[i]) {
+              ctx.moveTo(currX, height - sliderY);
+              ctx.lineTo(currX + sliderWidth, height - sliderY);
+              this.peaks[i] = value[i];
+            } else if (value[i] <= this.peaks[i]) {
+              ctx.moveTo(currX, height - height / range * (this.peaks[i] - min));
+              ctx.lineTo(currX + sliderWidth, height - height / range * (this.peaks[i] - min));
+            }
+            ctx.closePath();
+            ctx.stroke();
+          }
+          if (setStyle === "Bar" || setStyle === "Thin Line" && ghostBar > 0) {
+            if (setStyle === "Thin Line")
+              ctx.fillStyle = color_js__WEBPACK_IMPORTED_MODULE_1__(colors[i % candycane]).setAlpha(ghostBar / 100).toRGB();
+            else
+              ctx.fillStyle = colors[i % candycane];
+            ctx.fillRect(currX, height - sliderY, sliderWidth, sliderY - zeroY);
+          } else if (setStyle === "Point Scroll" || setStyle === "Reverse Point Scroll") {
+            ctx.fillStyle = colors[i % candycane];
+            for (let j = 0; j < this._values[i].length; j++) {
+              let cy = height / size / range * (this._values[i][j] - min);
+              let cx = setStyle === "Point Scroll" ? j : width - j;
+              ctx.beginPath();
+              ctx.ellipse(cx, height / size * (i + 1) - cy, 0.5, 0.5, 0, 0, Math.PI * 2);
+              ctx.closePath();
+              ctx.fill();
+            }
+          } else if (setStyle === "Line Scroll" || setStyle === "Reverse Line Scroll") {
+            ctx.strokeStyle = colors[i % candycane];
+            for (let j = 0; j < this._values[i].length; j++) {
+              let cy = height / size / range * (this._values[i][j] - min);
+              let cx = setStyle === "Line Scroll" ? j : width - j;
+              ctx.lineWidth = 1;
+              let yZero;
+              if (max >= 0 && min >= 0) {
+                yZero = 1;
+              } else if (max < 0 && min < 0) {
+                yZero = 0;
+              } else {
+                yZero = max / (max - min);
+              }
+              ctx.beginPath();
+              ctx.moveTo(cx, height / size * (i + yZero));
+              ctx.lineTo(cx, height / size * (i + 1) - cy);
+              ctx.closePath();
+              ctx.stroke();
+            }
+          }
+          ctx.fillStyle = transparentColor;
+          ctx.fillRect(currX - spacing / 2, 0, sliderWidth + spacing, height + thickness);
+          currX += sliderWidth + spacing;
+        }
+      }
+    };
+    this.handleScroll = (e) => {
+      var _a;
+      if (e.value && ((_a = this.refCanvasUI.current) == null ? void 0 : _a.canvas)) {
+        const { value } = e;
+        const { setStyle, size, orientation } = this.state;
+        const { width, height } = this.refCanvasUI.current.canvas;
+        if (setStyle === "Point Scroll" || setStyle === "Line Scroll" || setStyle === "Reverse Point Scroll" || setStyle === "Reverse Line Scroll") {
+          for (let i = 0; i < size; i++) {
+            if (!Array.isArray(this._values[i]))
+              this._values[i] = [];
+            if (this._values[i].length === (orientation === "Horizontal" ? height : width))
+              this._values[i].pop();
+            else if (this._values[i].length > (orientation === "Horizontal" ? height : width))
+              this._values[i] = [];
+            this._values[i].unshift(value[i]);
+          }
+        }
+      }
+    };
+  }
+  _getSliderIndex(e) {
+    const { orientation, size } = this.state;
+    if (orientation === "Vertical") {
+      return ~~(e.x / this.refCanvasUI.current.canvas.width * size);
+    } else {
+      return ~~(e.y / this.refCanvasUI.current.canvas.height * size);
+    }
+  }
+  _getValue(e) {
+    const { setMinMax, orientation } = this.state;
+    const [min, max] = setMinMax;
+    const range = max - min;
+    let newVal;
+    if (orientation === "Vertical") {
+      newVal = (1 - e.y / this.refCanvasUI.current.canvas.height) * range + setMinMax[0];
+    } else {
+      newVal = e.x / this.refCanvasUI.current.canvas.width * range + setMinMax[0];
+    }
+    return Math.min(max, Math.max(min, newVal));
+  }
+  setValueToOutput(valueIn) {
+    const value = this.object.toValidValue(valueIn);
+    this.setState({ value });
+    this.props.object.onChangeFromUI({ value });
+  }
+  componentDidMount() {
+    this.object.on("updateUI", this.handleScroll);
+    super.componentDidMount();
+  }
+  componentWillUnmount() {
+    super.componentWillUnmount();
+    this.object.off("updateUI", this.handleScroll);
+  }
+  render() {
+    return /* @__PURE__ */ _sdk__WEBPACK_IMPORTED_MODULE_0__.React.createElement(_sdk__WEBPACK_IMPORTED_MODULE_0__.CanvasUI, __spreadProps(__spreadValues({
+      ref: this.refCanvasUI,
+      onPaint: this.onPaint
+    }, this.props), {
+      canvasProps: {
+        tabIndex: 1,
+        onKeyDown: this.handleKeyDown,
+        onKeyUp: this.handleKeyUp,
+        onTouchStart: this.handleTouchStart,
+        onWheel: this.handleWheel,
+        onClick: this.handleClick,
+        onMouseDown: this.handleMouseDown,
+        onMouseOver: this.handleMouseOver,
+        onMouseOut: this.handleMouseOut,
+        onContextMenu: this.handleContextMenu,
+        onFocus: this.handleFocusIn,
+        onBlur: this.handleFocusOut
+      }
+    }));
+  }
+};
+let MultisliderUI = _MultisliderUI;
+MultisliderUI.CANDICANE_9_23 = [
+  "rgb(204, 156, 97)",
+  "rgb(1, 189, 156)",
+  "rgb(204, 140, 140)",
+  "rgb(1, 156, 156)",
+  "rgb(1, 227, 23)",
+  "rgb(40, 204, 140)",
+  "rgb(74, 156, 97)",
+  "rgb(97, 156, 156)",
+  "rgb(156, 179, 1)",
+  "rgb(194, 181, 207)",
+  "rgb(153, 153, 1)",
+  "rgb(102, 102, 204)",
+  "rgb(153, 102, 153)",
+  "rgb(1, 92, 174)",
+  "rgb(1, 138, 215)"
+];
+
 
 
 /***/ }),
@@ -5555,12 +6401,12 @@ options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWi
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_ui_scss__WEBPACK_IMPORTED_MODULE_6__.default, options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_ui_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_ui_scss__WEBPACK_IMPORTED_MODULE_6__.default && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_ui_scss__WEBPACK_IMPORTED_MODULE_6__.default.locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_ui_scss__WEBPACK_IMPORTED_MODULE_6__.default.locals : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_ui_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_ui_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_ui_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -5574,13 +6420,13 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 "use strict";
 
 
-var stylesInDom = [];
+var stylesInDOM = [];
 
 function getIndexByIdentifier(identifier) {
   var result = -1;
 
-  for (var i = 0; i < stylesInDom.length; i++) {
-    if (stylesInDom[i].identifier === identifier) {
+  for (var i = 0; i < stylesInDOM.length; i++) {
+    if (stylesInDOM[i].identifier === identifier) {
       result = i;
       break;
     }
@@ -5599,20 +6445,24 @@ function modulesToDom(list, options) {
     var count = idCountMap[id] || 0;
     var identifier = "".concat(id, " ").concat(count);
     idCountMap[id] = count + 1;
-    var index = getIndexByIdentifier(identifier);
+    var indexByIdentifier = getIndexByIdentifier(identifier);
     var obj = {
       css: item[1],
       media: item[2],
-      sourceMap: item[3]
+      sourceMap: item[3],
+      supports: item[4],
+      layer: item[5]
     };
 
-    if (index !== -1) {
-      stylesInDom[index].references++;
-      stylesInDom[index].updater(obj);
+    if (indexByIdentifier !== -1) {
+      stylesInDOM[indexByIdentifier].references++;
+      stylesInDOM[indexByIdentifier].updater(obj);
     } else {
-      stylesInDom.push({
+      var updater = addElementStyle(obj, options);
+      options.byIndex = i;
+      stylesInDOM.splice(i, 0, {
         identifier: identifier,
-        updater: addStyle(obj, options),
+        updater: updater,
         references: 1
       });
     }
@@ -5623,12 +6473,13 @@ function modulesToDom(list, options) {
   return identifiers;
 }
 
-function addStyle(obj, options) {
+function addElementStyle(obj, options) {
   var api = options.domAPI(options);
   api.update(obj);
-  return function updateStyle(newObj) {
+
+  var updater = function updater(newObj) {
     if (newObj) {
-      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap) {
+      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap && newObj.supports === obj.supports && newObj.layer === obj.layer) {
         return;
       }
 
@@ -5637,6 +6488,8 @@ function addStyle(obj, options) {
       api.remove();
     }
   };
+
+  return updater;
 }
 
 module.exports = function (list, options) {
@@ -5649,7 +6502,7 @@ module.exports = function (list, options) {
     for (var i = 0; i < lastIdentifiers.length; i++) {
       var identifier = lastIdentifiers[i];
       var index = getIndexByIdentifier(identifier);
-      stylesInDom[index].references--;
+      stylesInDOM[index].references--;
     }
 
     var newLastIdentifiers = modulesToDom(newList, options);
@@ -5659,10 +6512,10 @@ module.exports = function (list, options) {
 
       var _index = getIndexByIdentifier(_identifier);
 
-      if (stylesInDom[_index].references === 0) {
-        stylesInDom[_index].updater();
+      if (stylesInDOM[_index].references === 0) {
+        stylesInDOM[_index].updater();
 
-        stylesInDom.splice(_index, 1);
+        stylesInDOM.splice(_index, 1);
       }
     }
 
@@ -5732,10 +6585,10 @@ module.exports = insertBySelector;
 
 /* istanbul ignore next  */
 function insertStyleElement(options) {
-  var style = document.createElement("style");
-  options.setAttributes(style, options.attributes);
-  options.insert(style);
-  return style;
+  var element = document.createElement("style");
+  options.setAttributes(element, options.attributes);
+  options.insert(element, options.options);
+  return element;
 }
 
 module.exports = insertStyleElement;
@@ -5752,11 +6605,11 @@ module.exports = insertStyleElement;
 
 
 /* istanbul ignore next  */
-function setAttributesWithoutAttributes(style) {
+function setAttributesWithoutAttributes(styleElement) {
   var nonce =  true ? __webpack_require__.nc : 0;
 
   if (nonce) {
-    style.setAttribute("nonce", nonce);
+    styleElement.setAttribute("nonce", nonce);
   }
 }
 
@@ -5774,16 +6627,38 @@ module.exports = setAttributesWithoutAttributes;
 
 
 /* istanbul ignore next  */
-function apply(style, options, obj) {
-  var css = obj.css;
-  var media = obj.media;
-  var sourceMap = obj.sourceMap;
+function apply(styleElement, options, obj) {
+  var css = "";
 
-  if (media) {
-    style.setAttribute("media", media);
-  } else {
-    style.removeAttribute("media");
+  if (obj.supports) {
+    css += "@supports (".concat(obj.supports, ") {");
   }
+
+  if (obj.media) {
+    css += "@media ".concat(obj.media, " {");
+  }
+
+  var needLayer = typeof obj.layer !== "undefined";
+
+  if (needLayer) {
+    css += "@layer".concat(obj.layer.length > 0 ? " ".concat(obj.layer) : "", " {");
+  }
+
+  css += obj.css;
+
+  if (needLayer) {
+    css += "}";
+  }
+
+  if (obj.media) {
+    css += "}";
+  }
+
+  if (obj.supports) {
+    css += "}";
+  }
+
+  var sourceMap = obj.sourceMap;
 
   if (sourceMap && typeof btoa !== "undefined") {
     css += "\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), " */");
@@ -5792,28 +6667,28 @@ function apply(style, options, obj) {
   /* istanbul ignore if  */
 
 
-  options.styleTagTransform(css, style);
+  options.styleTagTransform(css, styleElement, options.options);
 }
 
-function removeStyleElement(style) {
+function removeStyleElement(styleElement) {
   // istanbul ignore if
-  if (style.parentNode === null) {
+  if (styleElement.parentNode === null) {
     return false;
   }
 
-  style.parentNode.removeChild(style);
+  styleElement.parentNode.removeChild(styleElement);
 }
 /* istanbul ignore next  */
 
 
 function domAPI(options) {
-  var style = options.insertStyleElement(options);
+  var styleElement = options.insertStyleElement(options);
   return {
     update: function update(obj) {
-      apply(style, options, obj);
+      apply(styleElement, options, obj);
     },
     remove: function remove() {
-      removeStyleElement(style);
+      removeStyleElement(styleElement);
     }
   };
 }
@@ -5832,15 +6707,15 @@ module.exports = domAPI;
 
 
 /* istanbul ignore next  */
-function styleTagTransform(css, style) {
-  if (style.styleSheet) {
-    style.styleSheet.cssText = css;
+function styleTagTransform(css, styleElement) {
+  if (styleElement.styleSheet) {
+    styleElement.styleSheet.cssText = css;
   } else {
-    while (style.firstChild) {
-      style.removeChild(style.firstChild);
+    while (styleElement.firstChild) {
+      styleElement.removeChild(styleElement.firstChild);
     }
 
-    style.appendChild(document.createTextNode(css));
+    styleElement.appendChild(document.createTextNode(css));
   }
 }
 
@@ -7067,7 +7942,7 @@ module.exports = $gOPD;
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@jspatcher/package-ui","version":"1.0.1","description":"The UI package for JSPatcher","main":"dist/index.js","scripts":{"build":"webpack --mode development","build-watch":"webpack --mode development --watch --stats-children"},"keywords":["jspatcher"],"jspatcher":{"isJSPatcherPackage":true,"thumbnail":"","jspatpkg":"index.jspatpkg.js"},"author":"Fr0stbyteR","license":"GPL-3.0-or-later","repository":"https://github.com/jspatcher/package-ui","devDependencies":{"@jspatcher/jspatcher":"0.0.8","@types/react":"^17.0.19","clean-webpack-plugin":"^4.0.0-alpha.0","color-js":"^1.0.5","css-loader":"^6.2.0","esbuild-loader":"^2.15.1","monaco-editor":"^0.27.0","node-sass":"^6.0.1","react":"^17.0.2","react-monaco-editor":"^0.44.0","sass-loader":"^12.1.0","semantic-ui-react":"^2.0.3","style-loader":"^3.2.1","typescript":"^4.4.2","util":"^0.12.4","webpack":"^5.51.1","webpack-cli":"^4.8.0"}}');
+module.exports = JSON.parse('{"name":"@jspatcher/package-ui","version":"1.0.1","description":"The UI package for JSPatcher","main":"dist/index.js","scripts":{"build":"webpack --mode development","build-watch":"webpack --mode development --watch --stats-children"},"keywords":["jspatcher"],"jspatcher":{"isJSPatcherPackage":true,"thumbnail":"","jspatpkg":"index.jspatpkg.js"},"author":"Fr0stbyteR","license":"GPL-3.0-or-later","repository":"https://github.com/jspatcher/package-ui","devDependencies":{"@jspatcher/jspatcher":"0.0.9","@types/react":"^17.0.30","clean-webpack-plugin":"^4.0.0","color-js":"^1.0.5","css-loader":"^6.4.0","esbuild-loader":"^2.16.0","monaco-editor":"^0.27.0","node-sass":"^6.0.1","react":"^17.0.2","react-monaco-editor":"^0.44.0","sass-loader":"^12.2.0","semantic-ui-react":"^2.0.4","style-loader":"^3.3.0","typescript":"^4.4.4","util":"^0.12.4","webpack":"^5.58.2","webpack-cli":"^4.9.1"}}');
 
 /***/ })
 
@@ -7202,7 +8077,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _objects_number__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./objects/number */ "./src/objects/number.ts");
 /* harmony import */ var _objects_img__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./objects/img */ "./src/objects/img.ts");
 /* harmony import */ var _objects_slider__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./objects/slider */ "./src/objects/slider.ts");
-/* harmony import */ var _ui_ui_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./ui/ui.scss */ "./src/ui/ui.scss");
+/* harmony import */ var _objects_multislider__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./objects/multislider */ "./src/objects/multislider.ts");
+/* harmony import */ var _ui_ui_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./ui/ui.scss */ "./src/ui/ui.scss");
 
 
 
@@ -7214,7 +8090,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (async () => ({ message: _objects_message__WEBPACK_IMPORTED_MODULE_0__.default, code: _objects_code__WEBPACK_IMPORTED_MODULE_1__.default, menu: _objects_menu__WEBPACK_IMPORTED_MODULE_2__.default, view: _objects_view__WEBPACK_IMPORTED_MODULE_3__.default, keyboard: _objects_keyboard__WEBPACK_IMPORTED_MODULE_4__.default, bpf: _objects_bpf__WEBPACK_IMPORTED_MODULE_5__.default, waveform: _objects_waveform__WEBPACK_IMPORTED_MODULE_6__.default, img: _objects_img__WEBPACK_IMPORTED_MODULE_8__.default, number: _objects_number__WEBPACK_IMPORTED_MODULE_7__.default, slider: _objects_slider__WEBPACK_IMPORTED_MODULE_9__.default }));
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (async () => ({ message: _objects_message__WEBPACK_IMPORTED_MODULE_0__["default"], code: _objects_code__WEBPACK_IMPORTED_MODULE_1__["default"], menu: _objects_menu__WEBPACK_IMPORTED_MODULE_2__["default"], view: _objects_view__WEBPACK_IMPORTED_MODULE_3__["default"], keyboard: _objects_keyboard__WEBPACK_IMPORTED_MODULE_4__["default"], bpf: _objects_bpf__WEBPACK_IMPORTED_MODULE_5__["default"], waveform: _objects_waveform__WEBPACK_IMPORTED_MODULE_6__["default"], img: _objects_img__WEBPACK_IMPORTED_MODULE_8__["default"], number: _objects_number__WEBPACK_IMPORTED_MODULE_7__["default"], slider: _objects_slider__WEBPACK_IMPORTED_MODULE_9__["default"], multislider: _objects_multislider__WEBPACK_IMPORTED_MODULE_10__["default"] }));
 
 })();
 
