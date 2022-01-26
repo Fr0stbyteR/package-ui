@@ -1,6 +1,6 @@
 import type PersistentProjectFile from "@jspatcher/jspatcher/src/core/file/PersistentProjectFile";
 import type PatcherImage from "@jspatcher/jspatcher/src/core/image/PatcherImage";
-import type { IArgsMeta, IInletsMeta, IPropsMeta } from "@jspatcher/jspatcher/src/core/objects/base/AbstractObject";
+import type { IArgsMeta, IInletsMeta, IOutletsMeta, IPropsMeta } from "@jspatcher/jspatcher/src/core/objects/base/AbstractObject";
 import UIObject from "./base";
 import { isBang } from "../sdk";
 import ImgUI, { ImgUIState } from "../ui/img";
@@ -22,6 +22,10 @@ export default class img extends UIObject<{}, {}, [string | HTMLImageElement], [
         isHot: true,
         type: "anything",
         description: "Image file name or url"
+    }];
+    static outlets: IOutletsMeta = [{
+        type: "object",
+        description: "HTMLImageElement"
     }];
     static args: IArgsMeta = [{
         type: "string",
@@ -95,7 +99,7 @@ export default class img extends UIObject<{}, {}, [string | HTMLImageElement], [
         };
         this.on("preInit", () => {
             this.inlets = 1;
-            this.outlets = 0;
+            this.outlets = 1;
         });
         this.on("postInit", reload);
         this.on("updateArgs", (args) => {
@@ -106,11 +110,14 @@ export default class img extends UIObject<{}, {}, [string | HTMLImageElement], [
                 if (key !== oldKey) reload();
             }
         });
-        this.on("inlet", ({ data, inlet }) => {
+        this.on("inlet", async ({ data, inlet }) => {
             if (inlet === 0) {
                 if (!isBang(data)) {
                     if (typeof data === "string") {
                         this._.key = data;
+                        reload();
+                    } else if (typeof data === "object" && data instanceof HTMLImageElement) {
+                        this._.key = data.src;
                         reload();
                     }
                 }

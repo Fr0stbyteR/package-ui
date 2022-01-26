@@ -965,7 +965,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".patcher div.box-ui > div.package-ui.package-ui-code {\n  height: 100%;\n  width: 100%; }\n\n.patcher div.box-ui > div.package-ui.box-ui-button.box-ui-container {\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n  overflow: auto;\n  padding: 0px;\n  margin: 0px; }\n\n.patcher div.box-ui > div.package-ui.box-ui-button > .box-ui-text-container {\n  display: flex;\n  flex: 0 0 auto;\n  padding: 4px 5px;\n  width: 100%;\n  font-family: Lato, Tahoma, sans-serif;\n  font-size: 12px;\n  text-align: left;\n  margin: 0px;\n  overflow-wrap: break-word;\n  cursor: default;\n  user-select: none;\n  -webkit-user-select: none; }\n  .patcher div.box-ui > div.package-ui.box-ui-button > .box-ui-text-container:first-child {\n    border-top-width: 4px; }\n  .patcher div.box-ui > div.package-ui.box-ui-button > .box-ui-text-container:last-child {\n    border-bottom-width: 4px; }\n  .patcher div.box-ui > div.package-ui.box-ui-button > .box-ui-text-container > span {\n    position: relative;\n    word-break: break-all;\n    width: 100%;\n    line-height: 14px;\n    font-weight: normal;\n    color: black; }\n    .patcher div.box-ui > div.package-ui.box-ui-button > .box-ui-text-container > span.editing {\n      pointer-events: auto;\n      cursor: text;\n      user-select: auto;\n      -webkit-user-select: auto; }\n    .patcher div.box-ui > div.package-ui.box-ui-button > .box-ui-text-container > span:empty::before {\n      content: \"\\200b\"; }\n    .patcher div.box-ui > div.package-ui.box-ui-button > .box-ui-text-container > span::selection {\n      background-color: #004eff;\n      color: white; }\n  .patcher div.box-ui > div.package-ui.box-ui-button > .box-ui-text-container i.icon {\n    line-height: 14px; }\n\n.patcher div.box-ui > div.package-ui.package-ui-menu > .dropdown {\n  user-select: none;\n  -webkit-user-select: none;\n  font-size: 12px;\n  padding: 4px 15px 4px 5px;\n  min-height: auto; }\n  .patcher div.box-ui > div.package-ui.package-ui-menu > .dropdown > .dropdown.icon {\n    padding: 5px 5px; }\n  .patcher div.box-ui > div.package-ui.package-ui-menu > .dropdown > .menu > .item {\n    user-select: none;\n    -webkit-user-select: none;\n    font-size: 12px;\n    padding: 4px 5px !important; }\n    .patcher div.box-ui > div.package-ui.package-ui-menu > .dropdown > .menu > .item.active {\n      font-weight: 600; }\n\n.patcher.unlocked div.box.selected > div.box-ui > div.package-ui.box-ui-button:hover, .patcher.unlocked div.box.selected > div.box-ui > div.package-ui.box-ui-button:active {\n  background-color: #e0e1e2; }\n\n.patcher.unlocked div.box.selected > div.box-ui > div.package-ui.box-ui-button > .box-ui-text-container {\n  pointer-events: auto; }\n\n.patcher.unlocked div.box.selected > div.box-ui > div.package-ui > span {\n  pointer-events: auto; }\n", "",{"version":3,"sources":["webpack://./src/ui/ui.scss"],"names":[],"mappings":"AAAA;EAEQ,YAAY;EACZ,WAAW,EAAA;;AAHnB;EAOY,aAAa;EACb,sBAAsB;EACtB,YAAY;EACZ,cAAc;EACd,YAAY;EACZ,WAAW,EAAA;;AAZvB;EAeY,aAAa;EACb,cAAc;EACd,gBAAgB;EAChB,WAAW;EACX,qCAAqC;EACrC,eAAe;EACf,gBAAgB;EAChB,WAAW;EACX,yBAAyB;EACzB,eAAe;EACf,iBAAiB;EACjB,yBAAyB,EAAA;EA1BrC;IA4BgB,qBAAqB,EAAA;EA5BrC;IA+BgB,wBAAwB,EAAA;EA/BxC;IAkCgB,kBAAkB;IAClB,qBAAqB;IACrB,WAAW;IACX,iBAAiB;IACjB,mBAAmB;IACnB,YAAY,EAAA;IAvC5B;MAyCoB,oBAAoB;MACpB,YAAY;MACZ,iBAAiB;MACjB,yBAAyB,EAAA;IA5C7C;MA+CoB,gBAAgB,EAAA;IA/CpC;MAkDoB,yBAAyB;MACzB,YAAY,EAAA;EAnDhC;IAuDgB,iBAAiB,EAAA;;AAvDjC;EA6DY,iBAAiB;EACjB,yBAAyB;EACzB,eAAe;EACf,yBAAyB;EACzB,gBAAgB,EAAA;EAjE5B;IAmEgB,gBAAgB,EAAA;EAnEhC;IAsEgB,iBAAiB;IACjB,yBAAyB;IACzB,eAAe;IACf,2BAA0B,EAAA;IAzE1C;MA2EoB,gBAAgB,EAAA;;AAMpC;EAGY,yBAAyB,EAAA;;AAHrC;EAMY,oBAAoB,EAAA;;AANhC;EAUQ,oBAAoB,EAAA","sourcesContent":[".patcher div.box-ui > div.package-ui {\n    &.package-ui-code {\n        height: 100%;\n        width: 100%;\n    }\n    &.box-ui-button {\n        &.box-ui-container {\n            display: flex;\n            flex-direction: column;\n            height: 100%;\n            overflow: auto;\n            padding: 0px;\n            margin: 0px;\n        }\n        & > .box-ui-text-container {\n            display: flex;\n            flex: 0 0 auto;\n            padding: 4px 5px;\n            width: 100%;\n            font-family: Lato, Tahoma, sans-serif;\n            font-size: 12px;\n            text-align: left;\n            margin: 0px;\n            overflow-wrap: break-word;\n            cursor: default;\n            user-select: none;\n            -webkit-user-select: none;\n            &:first-child {\n                border-top-width: 4px;\n            }\n            &:last-child {\n                border-bottom-width: 4px;\n            }\n            & > span {\n                position: relative;\n                word-break: break-all;\n                width: 100%;\n                line-height: 14px;\n                font-weight: normal;\n                color: black;\n                &.editing {\n                    pointer-events: auto;\n                    cursor: text;\n                    user-select: auto;\n                    -webkit-user-select: auto;\n                }\n                &:empty::before {\n                    content: \"\\200b\";\n                }\n                &::selection {\n                    background-color: #004eff;\n                    color: white;\n                }\n            }\n            i.icon {\n                line-height: 14px;\n            }\n        }\n    }\n    &.package-ui-menu {\n        & > .dropdown {\n            user-select: none;\n            -webkit-user-select: none;\n            font-size: 12px;\n            padding: 4px 15px 4px 5px;\n            min-height: auto;\n            & > .dropdown.icon {\n                padding: 5px 5px;\n            }\n            & > .menu > .item {\n                user-select: none;\n                -webkit-user-select: none;\n                font-size: 12px;\n                padding: 4px 5px!important;\n                &.active {\n                    font-weight: 600;\n                }\n            }\n        }\n    }\n}\n.patcher.unlocked div.box.selected > div.box-ui > div.package-ui {\n    &.box-ui-button {\n        &:hover, &:active {\n            background-color: #e0e1e2;\n        }\n        & > .box-ui-text-container {\n            pointer-events: auto;\n        }\n    }\n    & > span {\n        pointer-events: auto;\n    }\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "@charset \"UTF-8\";\n.patcher div.box-ui > div.package-ui.package-ui-code {\n  height: 100%;\n  width: 100%;\n}\n.patcher div.box-ui > div.package-ui.box-ui-button.box-ui-container {\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n  overflow: auto;\n  padding: 0px;\n  margin: 0px;\n}\n.patcher div.box-ui > div.package-ui.box-ui-button > .box-ui-text-container {\n  display: flex;\n  flex: 0 0 auto;\n  padding: 4px 5px;\n  width: 100%;\n  font-family: Lato, Tahoma, sans-serif;\n  font-size: 12px;\n  text-align: left;\n  margin: 0px;\n  overflow-wrap: break-word;\n  cursor: default;\n  user-select: none;\n  -webkit-user-select: none;\n}\n.patcher div.box-ui > div.package-ui.box-ui-button > .box-ui-text-container:first-child {\n  border-top-width: 4px;\n}\n.patcher div.box-ui > div.package-ui.box-ui-button > .box-ui-text-container:last-child {\n  border-bottom-width: 4px;\n}\n.patcher div.box-ui > div.package-ui.box-ui-button > .box-ui-text-container > span {\n  position: relative;\n  word-break: break-all;\n  width: 100%;\n  line-height: 14px;\n  font-weight: normal;\n  color: black;\n}\n.patcher div.box-ui > div.package-ui.box-ui-button > .box-ui-text-container > span.editing {\n  pointer-events: auto;\n  cursor: text;\n  user-select: auto;\n  -webkit-user-select: auto;\n}\n.patcher div.box-ui > div.package-ui.box-ui-button > .box-ui-text-container > span:empty::before {\n  content: \"​\";\n}\n.patcher div.box-ui > div.package-ui.box-ui-button > .box-ui-text-container > span::selection {\n  background-color: #004eff;\n  color: white;\n}\n.patcher div.box-ui > div.package-ui.box-ui-button > .box-ui-text-container i.icon {\n  line-height: 14px;\n}\n.patcher div.box-ui > div.package-ui.package-ui-menu > .dropdown {\n  user-select: none;\n  -webkit-user-select: none;\n  font-size: 12px;\n  padding: 4px 15px 4px 5px;\n  min-height: auto;\n}\n.patcher div.box-ui > div.package-ui.package-ui-menu > .dropdown > .dropdown.icon {\n  padding: 5px 5px;\n}\n.patcher div.box-ui > div.package-ui.package-ui-menu > .dropdown > .menu > .item {\n  user-select: none;\n  -webkit-user-select: none;\n  font-size: 12px;\n  padding: 4px 5px !important;\n}\n.patcher div.box-ui > div.package-ui.package-ui-menu > .dropdown > .menu > .item.active {\n  font-weight: 600;\n}\n\n.patcher.unlocked div.box.selected > div.box-ui > div.package-ui.box-ui-button:hover, .patcher.unlocked div.box.selected > div.box-ui > div.package-ui.box-ui-button:active {\n  background-color: #e0e1e2;\n}\n.patcher.unlocked div.box.selected > div.box-ui > div.package-ui.box-ui-button > .box-ui-text-container {\n  pointer-events: auto;\n}\n.patcher.unlocked div.box.selected > div.box-ui > div.package-ui > span {\n  pointer-events: auto;\n}", "",{"version":3,"sources":["webpack://./src/ui/ui.scss"],"names":[],"mappings":"AAAA,gBAAgB;AACZ;EACI,YAAA;EACA,WAAA;AACR;AAEQ;EACI,aAAA;EACA,sBAAA;EACA,YAAA;EACA,cAAA;EACA,YAAA;EACA,WAAA;AAAZ;AAEQ;EACI,aAAA;EACA,cAAA;EACA,gBAAA;EACA,WAAA;EACA,qCAAA;EACA,eAAA;EACA,gBAAA;EACA,WAAA;EACA,yBAAA;EACA,eAAA;EACA,iBAAA;EACA,yBAAA;AAAZ;AACY;EACI,qBAAA;AAChB;AACY;EACI,wBAAA;AAChB;AACY;EACI,kBAAA;EACA,qBAAA;EACA,WAAA;EACA,iBAAA;EACA,mBAAA;EACA,YAAA;AAChB;AAAgB;EACI,oBAAA;EACA,YAAA;EACA,iBAAA;EACA,yBAAA;AAEpB;AAAgB;EACI,YAAA;AAEpB;AAAgB;EACI,yBAAA;EACA,YAAA;AAEpB;AACY;EACI,iBAAA;AAChB;AAIQ;EACI,iBAAA;EACA,yBAAA;EACA,eAAA;EACA,yBAAA;EACA,gBAAA;AAFZ;AAGY;EACI,gBAAA;AADhB;AAGY;EACI,iBAAA;EACA,yBAAA;EACA,eAAA;EACA,2BAAA;AADhB;AAEgB;EACI,gBAAA;AAApB;;AAQQ;EACI,yBAAA;AALZ;AAOQ;EACI,oBAAA;AALZ;AAQI;EACI,oBAAA;AANR","sourcesContent":[".patcher div.box-ui > div.package-ui {\n    &.package-ui-code {\n        height: 100%;\n        width: 100%;\n    }\n    &.box-ui-button {\n        &.box-ui-container {\n            display: flex;\n            flex-direction: column;\n            height: 100%;\n            overflow: auto;\n            padding: 0px;\n            margin: 0px;\n        }\n        & > .box-ui-text-container {\n            display: flex;\n            flex: 0 0 auto;\n            padding: 4px 5px;\n            width: 100%;\n            font-family: Lato, Tahoma, sans-serif;\n            font-size: 12px;\n            text-align: left;\n            margin: 0px;\n            overflow-wrap: break-word;\n            cursor: default;\n            user-select: none;\n            -webkit-user-select: none;\n            &:first-child {\n                border-top-width: 4px;\n            }\n            &:last-child {\n                border-bottom-width: 4px;\n            }\n            & > span {\n                position: relative;\n                word-break: break-all;\n                width: 100%;\n                line-height: 14px;\n                font-weight: normal;\n                color: black;\n                &.editing {\n                    pointer-events: auto;\n                    cursor: text;\n                    user-select: auto;\n                    -webkit-user-select: auto;\n                }\n                &:empty::before {\n                    content: \"\\200b\";\n                }\n                &::selection {\n                    background-color: #004eff;\n                    color: white;\n                }\n            }\n            i.icon {\n                line-height: 14px;\n            }\n        }\n    }\n    &.package-ui-menu {\n        & > .dropdown {\n            user-select: none;\n            -webkit-user-select: none;\n            font-size: 12px;\n            padding: 4px 15px 4px 5px;\n            min-height: auto;\n            & > .dropdown.icon {\n                padding: 5px 5px;\n            }\n            & > .menu > .item {\n                user-select: none;\n                -webkit-user-select: none;\n                font-size: 12px;\n                padding: 4px 5px!important;\n                &.active {\n                    font-weight: 600;\n                }\n            }\n        }\n    }\n}\n.patcher.unlocked div.box.selected > div.box-ui > div.package-ui {\n    &.box-ui-button {\n        &:hover, &:active {\n            background-color: #e0e1e2;\n        }\n        & > .box-ui-text-container {\n            pointer-events: auto;\n        }\n    }\n    & > span {\n        pointer-events: auto;\n    }\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1155,6 +1155,31 @@ var __spreadValues = (a, b) => {
 const name = _package_info__WEBPACK_IMPORTED_MODULE_0__["default"].name.split("/").pop().replace(/^package-/, "");
 const { author, license, keywords, version, description, jspatcher } = _package_info__WEBPACK_IMPORTED_MODULE_0__["default"];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__spreadValues({ name, author, license, keywords, version, description }, jspatcher));
+
+
+/***/ }),
+
+/***/ "./src/objects/base-default.ts":
+/*!*************************************!*\
+  !*** ./src/objects/base-default.ts ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ UIObject)
+/* harmony export */ });
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../index */ "./src/index.ts");
+/* harmony import */ var _sdk__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sdk */ "./src/sdk.ts");
+
+
+class UIObject extends _sdk__WEBPACK_IMPORTED_MODULE_1__.DefaultObject {
+}
+UIObject.package = _index__WEBPACK_IMPORTED_MODULE_0__.name;
+UIObject.author = _index__WEBPACK_IMPORTED_MODULE_0__.author;
+UIObject.version = _index__WEBPACK_IMPORTED_MODULE_0__.version;
+UIObject.description = _index__WEBPACK_IMPORTED_MODULE_0__.description;
 
 
 /***/ }),
@@ -1468,7 +1493,7 @@ class img extends _base__WEBPACK_IMPORTED_MODULE_0__["default"] {
     };
     this.on("preInit", () => {
       this.inlets = 1;
-      this.outlets = 0;
+      this.outlets = 1;
     });
     this.on("postInit", reload);
     this.on("updateArgs", (args) => {
@@ -1481,11 +1506,14 @@ class img extends _base__WEBPACK_IMPORTED_MODULE_0__["default"] {
           reload();
       }
     });
-    this.on("inlet", ({ data, inlet }) => {
+    this.on("inlet", async ({ data, inlet }) => {
       if (inlet === 0) {
         if (!(0,_sdk__WEBPACK_IMPORTED_MODULE_1__.isBang)(data)) {
           if (typeof data === "string") {
             this._.key = data;
+            reload();
+          } else if (typeof data === "object" && data instanceof HTMLImageElement) {
+            this._.key = data.src;
             reload();
           }
         }
@@ -1499,6 +1527,10 @@ img.inlets = [{
   isHot: true,
   type: "anything",
   description: "Image file name or url"
+}];
+img.outlets = [{
+  type: "object",
+  description: "HTMLImageElement"
 }];
 img.args = [{
   type: "string",
@@ -2691,6 +2723,331 @@ slider.UI = _ui_slider__WEBPACK_IMPORTED_MODULE_1__["default"];
 
 /***/ }),
 
+/***/ "./src/objects/text.ts":
+/*!*****************************!*\
+  !*** ./src/objects/text.ts ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ text)
+/* harmony export */ });
+/* harmony import */ var _base_default__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./base-default */ "./src/objects/base-default.ts");
+/* harmony import */ var _sdk__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sdk */ "./src/sdk.ts");
+/* harmony import */ var _ui_text__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui/text */ "./src/ui/text.tsx");
+var _a;
+
+
+
+class text extends _base_default__WEBPACK_IMPORTED_MODULE_0__["default"] {
+  constructor() {
+    super(...arguments);
+    this._ = { key: (_a = this.box.args[0]) == null ? void 0 : _a.toString(), text: void 0, file: void 0 };
+  }
+  subscribe() {
+    super.subscribe();
+    const handleSaved = async (e) => {
+      if (e.instance === this._.text)
+        return;
+      await reload();
+    };
+    const handleFilePathChanged = () => {
+      var _a2;
+      this._.key = (_a2 = this._.file) == null ? void 0 : _a2.projectPath;
+    };
+    const subsribeItem = async () => {
+      const { text: text2, file } = this._;
+      if (text2)
+        await text2.addObserver(this);
+      if (file) {
+        file.on("destroyed", reload);
+        file.on("nameChanged", handleFilePathChanged);
+        file.on("pathChanged", handleFilePathChanged);
+        file.on("saved", handleSaved);
+      }
+    };
+    const unsubscribeItem = async () => {
+      const { text: text2, file } = this._;
+      if (file) {
+        file.off("destroyed", reload);
+        file.off("nameChanged", handleFilePathChanged);
+        file.off("pathChanged", handleFilePathChanged);
+        file.off("saved", handleSaved);
+      }
+      if (text2)
+        await text2.removeObserver(this);
+    };
+    const reload = async () => {
+      await unsubscribeItem();
+      const { key } = this._;
+      let text2;
+      try {
+        const { item, newItem } = await this.getSharedItem(key, "text", async () => {
+          const resp = await fetch(key);
+          const content = await resp.arrayBuffer();
+          text2 = new _sdk__WEBPACK_IMPORTED_MODULE_1__.PatcherText({ env: this.env, project: this.patcher.project });
+          await text2.init(content);
+          this._.text = text2;
+          return text2;
+        });
+        if (newItem) {
+          text2.file = item;
+        } else {
+          text2 = await item.instantiate({ env: this.patcher.env, project: this.patcher.project });
+        }
+        this._.text = text2;
+        this._.file = item;
+        this.updateUI({ patcherText: text2 });
+      } catch (error) {
+        this.error(error);
+      } finally {
+        await subsribeItem();
+        this.outlet(2, new _sdk__WEBPACK_IMPORTED_MODULE_1__.Bang());
+      }
+    };
+    this.on("preInit", () => {
+      this.inlets = 3;
+      this.outlets = 3;
+    });
+    this.on("postInit", reload);
+    this.on("updateArgs", (args) => {
+      var _a2;
+      if (typeof args[0] === "string") {
+        const oldKey = this._.key;
+        const key = (_a2 = args[0]) == null ? void 0 : _a2.toString();
+        this._.key = key;
+        if (key !== oldKey)
+          reload();
+      }
+    });
+    this.on("inlet", async ({ data, inlet }) => {
+      if (inlet === 0) {
+        if (!(0,_sdk__WEBPACK_IMPORTED_MODULE_1__.isBang)(data)) {
+          if (typeof data === "string") {
+            this._.text.text = data;
+            if (this._.file instanceof _sdk__WEBPACK_IMPORTED_MODULE_1__.TempTextFile)
+              this._.file.save(this._.text, this);
+            else
+              this._.file.save(await this._.text.serialize(), this);
+          }
+        }
+        this.outletAll([this._.text.text, this._.text]);
+      } else if (inlet === 1) {
+        if (typeof data === "string") {
+          this._.text.text = data;
+          if (this._.file instanceof _sdk__WEBPACK_IMPORTED_MODULE_1__.TempTextFile)
+            this._.file.save(this._.text, this);
+          else
+            this._.file.save(await this._.text.serialize(), this);
+        }
+      }
+    });
+    this.on("destroy", unsubscribeItem);
+  }
+}
+text.description = "Read a text";
+text.inlets = [{
+  isHot: true,
+  type: "anything",
+  description: "Bang to output stored buffer, string to store"
+}, {
+  isHot: false,
+  type: "anything",
+  description: "String to store"
+}, {
+  isHot: false,
+  type: "anything",
+  description: "Set variable name."
+}];
+text.outlets = [{
+  type: "string",
+  description: "Text file content"
+}, {
+  type: "anything",
+  description: "PatcherText"
+}, {
+  type: "bang",
+  description: "Output a bang while the PatcherText buffer object is loaded/changed."
+}];
+text.args = [{
+  type: "string",
+  optional: true,
+  description: "Text file name or url"
+}];
+text.props = {};
+text.UI = _ui_text__WEBPACK_IMPORTED_MODULE_2__["default"];
+
+
+/***/ }),
+
+/***/ "./src/objects/video.ts":
+/*!******************************!*\
+  !*** ./src/objects/video.ts ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ video)
+/* harmony export */ });
+/* harmony import */ var _base__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./base */ "./src/objects/base.ts");
+/* harmony import */ var _sdk__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sdk */ "./src/sdk.ts");
+/* harmony import */ var _ui_video__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui/video */ "./src/ui/video.tsx");
+var _a;
+
+
+
+class video extends _base__WEBPACK_IMPORTED_MODULE_0__["default"] {
+  constructor() {
+    super(...arguments);
+    this._ = { key: (_a = this.box.args[0]) == null ? void 0 : _a.toString(), video: void 0, file: void 0, url: "" };
+  }
+  subscribe() {
+    super.subscribe();
+    const handleFilePathChanged = () => {
+      var _a2;
+      this._.key = (_a2 = this._.file) == null ? void 0 : _a2.projectPath;
+    };
+    const subsribeItem = async () => {
+      const { video: video2, file } = this._;
+      if (video2)
+        await video2.addObserver(this);
+      if (file) {
+        file.on("destroyed", reload);
+        file.on("nameChanged", handleFilePathChanged);
+        file.on("pathChanged", handleFilePathChanged);
+      }
+    };
+    const unsubscribeItem = async () => {
+      const { video: video2, file } = this._;
+      if (file) {
+        file.off("destroyed", reload);
+        file.off("nameChanged", handleFilePathChanged);
+        file.off("pathChanged", handleFilePathChanged);
+      }
+      if (video2)
+        await video2.removeObserver(this);
+    };
+    const reload = async () => {
+      await unsubscribeItem();
+      const { key } = this._;
+      let video2;
+      let url;
+      try {
+        const { item } = await this.getSharedItem(key, "video");
+        video2 = await item.instantiate({ env: this.patcher.env, project: this.patcher.project });
+        this._.video = video2;
+        this._.file = item;
+        url = video2.objectURL;
+      } catch (e) {
+        url = key;
+      } finally {
+        this._.url = url;
+        this.updateUI({ url });
+        await subsribeItem();
+      }
+    };
+    this.on("preInit", () => {
+      this.inlets = 1;
+      this.outlets = 2;
+    });
+    this.on("postInit", reload);
+    this.on("updateArgs", (args) => {
+      var _a2;
+      if (typeof args[0] === "string") {
+        const oldKey = this._.key;
+        const key = (_a2 = args[0]) == null ? void 0 : _a2.toString();
+        this._.key = key;
+        if (key !== oldKey)
+          reload();
+      }
+    });
+    this.on("inlet", async ({ data, inlet }) => {
+      if (inlet === 0) {
+        if (!(0,_sdk__WEBPACK_IMPORTED_MODULE_1__.isBang)(data)) {
+          if (typeof data === "number" || typeof data === "boolean") {
+            this.updateUI({ playing: !!data });
+          } else if (typeof data === "string") {
+            this._.key = data;
+            reload();
+          } else if (typeof data === "object") {
+            if (data instanceof HTMLVideoElement) {
+              this._.key = data.src;
+              reload();
+            } else if (typeof data.goto === "number") {
+              this.updateUI({ currentTime: data.goto, timestamp: performance.now() });
+            }
+          }
+        }
+      }
+    });
+    this.on("destroy", unsubscribeItem);
+  }
+}
+video.description = "Display a video";
+video.inlets = [{
+  isHot: true,
+  type: "anything",
+  description: "Image file name or url, { goto: number } to jump, boolean/number to switch play/stop"
+}];
+video.outlets = [{
+  type: "object",
+  description: "HTMLVideoElement"
+}, {
+  type: "number",
+  description: "currentTime"
+}];
+video.args = [{
+  type: "string",
+  optional: true,
+  description: "Image file name or url"
+}];
+video.props = {
+  autoPlay: {
+    type: "boolean",
+    default: false,
+    description: "Indicates whether playback should automatically begin as soon as enough media is available to do so without interruption.",
+    isUIState: true
+  },
+  controls: {
+    type: "boolean",
+    default: true,
+    description: "Indicates whether user interface items for controlling the resource should be displayed.",
+    isUIState: true
+  },
+  muted: {
+    type: "boolean",
+    default: false,
+    description: "Determines whether audio is muted.",
+    isUIState: true
+  },
+  playbackRate: {
+    type: "number",
+    default: 1,
+    description: "Sets the rate at which the media is being played back.",
+    isUIState: true
+  },
+  volume: {
+    type: "number",
+    default: 1,
+    description: "Indicates the audio volume, from 0.0 (silent) to 1.0 (loudest).",
+    isUIState: true
+  },
+  loop: {
+    type: "boolean",
+    default: true,
+    description: "Indicates whether the media element should start over when it reaches the end.",
+    isUIState: true
+  }
+};
+video.UI = _ui_video__WEBPACK_IMPORTED_MODULE_2__["default"];
+
+
+/***/ }),
+
 /***/ "./src/objects/view.ts":
 /*!*****************************!*\
   !*** ./src/objects/view.ts ***!
@@ -2959,7 +3316,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "SemanticUI": () => (/* binding */ SemanticUI),
 /* harmony export */   "PatcherAudio": () => (/* binding */ PatcherAudio),
 /* harmony export */   "OperableAudioBuffer": () => (/* binding */ OperableAudioBuffer),
+/* harmony export */   "TempTextFile": () => (/* binding */ TempTextFile),
+/* harmony export */   "PatcherText": () => (/* binding */ PatcherText),
+/* harmony export */   "TextEditor": () => (/* binding */ TextEditor),
+/* harmony export */   "TextEditorUI": () => (/* binding */ TextEditorUI),
 /* harmony export */   "Patcher": () => (/* binding */ Patcher),
+/* harmony export */   "PatcherEditor": () => (/* binding */ PatcherEditor),
+/* harmony export */   "PatcherEditorUI": () => (/* binding */ PatcherEditorUI),
 /* harmony export */   "Box": () => (/* binding */ Box),
 /* harmony export */   "Line": () => (/* binding */ Line),
 /* harmony export */   "BaseObject": () => (/* binding */ BaseObject),
@@ -2991,7 +3354,13 @@ const {
   SemanticUI,
   PatcherAudio,
   OperableAudioBuffer,
+  TempTextFile,
+  PatcherText,
+  TextEditor,
+  TextEditorUI,
   Patcher,
+  PatcherEditor,
+  PatcherEditorUI,
   Box,
   Line,
   BaseObject,
@@ -5214,6 +5583,221 @@ class SliderUI extends _sdk__WEBPACK_IMPORTED_MODULE_0__.CanvasUI {
     }));
   }
 }
+
+
+/***/ }),
+
+/***/ "./src/ui/text.tsx":
+/*!*************************!*\
+  !*** ./src/ui/text.tsx ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ TextUI)
+/* harmony export */ });
+/* harmony import */ var _sdk__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sdk */ "./src/sdk.ts");
+var __defProp = Object.defineProperty;
+var __defProps = Object.defineProperties;
+var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
+var __getOwnPropSymbols = Object.getOwnPropertySymbols;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __propIsEnum = Object.prototype.propertyIsEnumerable;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __spreadValues = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (__hasOwnProp.call(b, prop))
+      __defNormalProp(a, prop, b[prop]);
+  if (__getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(b)) {
+      if (__propIsEnum.call(b, prop))
+        __defNormalProp(a, prop, b[prop]);
+    }
+  return a;
+};
+var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
+
+const { Modal } = _sdk__WEBPACK_IMPORTED_MODULE_0__.SemanticUI;
+class TextUI extends _sdk__WEBPACK_IMPORTED_MODULE_0__.DefaultPopupUI {
+  constructor() {
+    super(...arguments);
+    this.state = __spreadProps(__spreadValues({}, this.state), {
+      patcherText: this.object._.text,
+      timestamp: performance.now(),
+      editor: void 0
+    });
+    this.handleChanged = () => {
+      if (this.state.editor.isTemporary)
+        this.state.editor.save();
+    };
+    this.handleDoubleClick = () => {
+      if (this.editor.state.locked)
+        this.setState({ modalOpen: true }, () => this.state.editor.setActive());
+    };
+    this.handleClose = () => this.setState({ modalOpen: false }, () => this.props.editor.setActive());
+    this.handleMouseDownModal = (e) => e.stopPropagation();
+  }
+  async componentDidMount() {
+    super.componentDidMount();
+    if (this.state.patcherText) {
+      const editor = await this.object._.text.getEditor();
+      this.setState({ editor });
+      editor.on("changed", this.handleChanged);
+    }
+  }
+  async componentDidUpdate(prevProps, prevState) {
+    if (prevState.patcherText !== this.state.patcherText) {
+      if (this.state.editor) {
+        this.state.editor.off("changed", this.handleChanged);
+        this.state.editor.destroy();
+      }
+      if (this.state.patcherText) {
+        const editor = await this.object._.text.getEditor();
+        this.setState({ timestamp: performance.now(), editor });
+        editor.init();
+        editor.on("changed", this.handleChanged);
+      } else {
+        this.setState({ timestamp: performance.now(), editor: void 0 });
+      }
+    }
+    super.componentDidUpdate(prevProps, prevState);
+  }
+  componentWillUnmount() {
+    var _a, _b;
+    (_a = this.state.editor) == null ? void 0 : _a.off("changed", this.handleChanged);
+    (_b = this.state.editor) == null ? void 0 : _b.destroy();
+    super.componentWillUnmount();
+  }
+  render() {
+    const content = /* @__PURE__ */ _sdk__WEBPACK_IMPORTED_MODULE_0__.React.createElement("div", {
+      style: { height: "100%", width: "100%", display: "flex", position: "relative" }
+    }, /* @__PURE__ */ _sdk__WEBPACK_IMPORTED_MODULE_0__.React.createElement("div", {
+      className: "ui-flex-row",
+      style: { flex: "1 1 auto", overflow: "auto" }
+    }, /* @__PURE__ */ _sdk__WEBPACK_IMPORTED_MODULE_0__.React.createElement("div", {
+      className: "ui-center"
+    }, this.state.editor ? /* @__PURE__ */ _sdk__WEBPACK_IMPORTED_MODULE_0__.React.createElement(_sdk__WEBPACK_IMPORTED_MODULE_0__.TextEditorUI, {
+      key: this.state.timestamp,
+      editor: this.state.editor,
+      env: this.env,
+      lang: this.env.language
+    }) : void 0)));
+    const children = /* @__PURE__ */ _sdk__WEBPACK_IMPORTED_MODULE_0__.React.createElement(Modal.Content, {
+      style: { height: "100%", width: "100%", position: "relative" },
+      onMouseDown: this.handleMouseDownModal
+    }, content);
+    if (this.props.inDock)
+      return children;
+    const containerProps = __spreadValues({}, this.props.containerProps);
+    if (!containerProps.onDoubleClick)
+      containerProps.onDoubleClick = this.handleDoubleClick;
+    const modalProps = __spreadProps(__spreadValues({}, this.props.modalProps), { children, className: "subpatcher", open: this.state.modalOpen, onClose: this.handleClose, onKeyDown: void 0, basic: true, size: "fullscreen", closeIcon: true });
+    return /* @__PURE__ */ _sdk__WEBPACK_IMPORTED_MODULE_0__.React.createElement(_sdk__WEBPACK_IMPORTED_MODULE_0__.DefaultPopupUI, __spreadProps(__spreadValues({}, this.props), {
+      modalProps,
+      containerProps
+    }));
+  }
+}
+TextUI.dockable = true;
+
+
+/***/ }),
+
+/***/ "./src/ui/video.tsx":
+/*!**************************!*\
+  !*** ./src/ui/video.tsx ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ VideoUI)
+/* harmony export */ });
+/* harmony import */ var _sdk__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sdk */ "./src/sdk.ts");
+var __defProp = Object.defineProperty;
+var __defProps = Object.defineProperties;
+var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
+var __getOwnPropSymbols = Object.getOwnPropertySymbols;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __propIsEnum = Object.prototype.propertyIsEnumerable;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __spreadValues = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (__hasOwnProp.call(b, prop))
+      __defNormalProp(a, prop, b[prop]);
+  if (__getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(b)) {
+      if (__propIsEnum.call(b, prop))
+        __defNormalProp(a, prop, b[prop]);
+    }
+  return a;
+};
+var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
+
+class VideoUI extends _sdk__WEBPACK_IMPORTED_MODULE_0__.BaseUI {
+  constructor() {
+    super(...arguments);
+    this.state = __spreadProps(__spreadValues({}, this.state), {
+      url: this.object._.url,
+      currentTime: 0,
+      timestamp: performance.now()
+    });
+    this.lastTimeUpdate = this.state.timestamp;
+    this.videoRef = _sdk__WEBPACK_IMPORTED_MODULE_0__.React.createRef();
+    this.handleTimeUpdate = (e) => {
+      this.object.outlet(1, e.currentTarget.currentTime);
+    };
+  }
+  componentDidMount() {
+    super.componentDidMount();
+    const video = this.videoRef.current;
+    if (video) {
+      const { playbackRate, volume, currentTime, playing } = this.state;
+      video.playbackRate = playbackRate;
+      video.volume = volume;
+      video.currentTime = currentTime;
+      if (playing)
+        video.play();
+    }
+  }
+  componentDidUpdate(prevProps, prevState) {
+    const video = this.videoRef.current;
+    if (video) {
+      const { playbackRate, volume, playing, currentTime, timestamp } = this.state;
+      if (prevState.playbackRate !== playbackRate) {
+        video.playbackRate = playbackRate;
+      } else if (prevState.volume !== volume) {
+        video.volume = volume;
+      }
+      if (prevState.playing !== playing) {
+        if (playing)
+          video.play();
+        else
+          video.pause();
+      } else if (this.lastTimeUpdate !== timestamp) {
+        video.currentTime = currentTime;
+        this.lastTimeUpdate = timestamp;
+      }
+    }
+  }
+  render() {
+    const { autoPlay, controls, muted, loop } = this.state;
+    return /* @__PURE__ */ _sdk__WEBPACK_IMPORTED_MODULE_0__.React.createElement(_sdk__WEBPACK_IMPORTED_MODULE_0__.BaseUI, __spreadValues({}, this.props), /* @__PURE__ */ _sdk__WEBPACK_IMPORTED_MODULE_0__.React.createElement("div", {
+      style: { position: "absolute", width: "100%", height: "100%", display: "block", overflow: "auto" }
+    }, /* @__PURE__ */ _sdk__WEBPACK_IMPORTED_MODULE_0__.React.createElement("video", __spreadProps(__spreadValues({
+      src: this.state.url,
+      style: { position: "absolute", width: "100%", height: "100%" }
+    }, { autoPlay, controls, muted, loop }), {
+      ref: this.videoRef,
+      onTimeUpdate: this.handleTimeUpdate
+    }))));
+  }
+}
+VideoUI.sizing = "both";
+VideoUI.defaultSize = [210, 90];
 
 
 /***/ }),
@@ -7942,7 +8526,7 @@ module.exports = $gOPD;
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@jspatcher/package-ui","version":"1.0.1","description":"The UI package for JSPatcher","main":"dist/index.js","scripts":{"build":"webpack --mode development","build-watch":"webpack --mode development --watch --stats-children"},"keywords":["jspatcher"],"jspatcher":{"isJSPatcherPackage":true,"thumbnail":"","jspatpkg":"index.jspatpkg.js"},"author":"Fr0stbyteR","license":"GPL-3.0-or-later","repository":"https://github.com/jspatcher/package-ui","devDependencies":{"@jspatcher/jspatcher":"0.0.9","@types/react":"^17.0.30","clean-webpack-plugin":"^4.0.0","color-js":"^1.0.5","css-loader":"^6.4.0","esbuild-loader":"^2.16.0","monaco-editor":"^0.27.0","node-sass":"^6.0.1","react":"^17.0.2","react-monaco-editor":"^0.44.0","sass-loader":"^12.2.0","semantic-ui-react":"^2.0.4","style-loader":"^3.3.0","typescript":"^4.4.4","util":"^0.12.4","webpack":"^5.58.2","webpack-cli":"^4.9.1"}}');
+module.exports = JSON.parse('{"name":"@jspatcher/package-ui","version":"1.0.1","description":"The UI package for JSPatcher","main":"dist/index.js","scripts":{"build":"webpack --mode development","build-watch":"webpack --mode development --watch --stats-children"},"keywords":["jspatcher"],"jspatcher":{"isJSPatcherPackage":true,"thumbnail":"","jspatpkg":"index.jspatpkg.js"},"author":"Fr0stbyteR","license":"GPL-3.0-or-later","repository":"https://github.com/jspatcher/package-ui","devDependencies":{"@jspatcher/jspatcher":"0.0.9","@types/react":"^17.0.30","clean-webpack-plugin":"^4.0.0","color-js":"^1.0.5","css-loader":"^6.4.0","esbuild-loader":"^2.16.0","monaco-editor":"^0.27.0","react":"^17.0.2","react-monaco-editor":"^0.44.0","sass":"^1.45.2","sass-loader":"^12.2.0","semantic-ui-react":"^2.0.4","style-loader":"^3.3.0","typescript":"^4.4.4","util":"^0.12.4","webpack":"^5.58.2","webpack-cli":"^4.9.1"}}');
 
 /***/ })
 
@@ -8078,7 +8662,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _objects_img__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./objects/img */ "./src/objects/img.ts");
 /* harmony import */ var _objects_slider__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./objects/slider */ "./src/objects/slider.ts");
 /* harmony import */ var _objects_multislider__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./objects/multislider */ "./src/objects/multislider.ts");
-/* harmony import */ var _ui_ui_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./ui/ui.scss */ "./src/ui/ui.scss");
+/* harmony import */ var _objects_text__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./objects/text */ "./src/objects/text.ts");
+/* harmony import */ var _objects_video__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./objects/video */ "./src/objects/video.ts");
+/* harmony import */ var _ui_ui_scss__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./ui/ui.scss */ "./src/ui/ui.scss");
 
 
 
@@ -8091,7 +8677,23 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (async () => ({ message: _objects_message__WEBPACK_IMPORTED_MODULE_0__["default"], code: _objects_code__WEBPACK_IMPORTED_MODULE_1__["default"], menu: _objects_menu__WEBPACK_IMPORTED_MODULE_2__["default"], view: _objects_view__WEBPACK_IMPORTED_MODULE_3__["default"], keyboard: _objects_keyboard__WEBPACK_IMPORTED_MODULE_4__["default"], bpf: _objects_bpf__WEBPACK_IMPORTED_MODULE_5__["default"], waveform: _objects_waveform__WEBPACK_IMPORTED_MODULE_6__["default"], img: _objects_img__WEBPACK_IMPORTED_MODULE_8__["default"], number: _objects_number__WEBPACK_IMPORTED_MODULE_7__["default"], slider: _objects_slider__WEBPACK_IMPORTED_MODULE_9__["default"], multislider: _objects_multislider__WEBPACK_IMPORTED_MODULE_10__["default"] }));
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (async () => ({
+  message: _objects_message__WEBPACK_IMPORTED_MODULE_0__["default"],
+  code: _objects_code__WEBPACK_IMPORTED_MODULE_1__["default"],
+  menu: _objects_menu__WEBPACK_IMPORTED_MODULE_2__["default"],
+  view: _objects_view__WEBPACK_IMPORTED_MODULE_3__["default"],
+  keyboard: _objects_keyboard__WEBPACK_IMPORTED_MODULE_4__["default"],
+  bpf: _objects_bpf__WEBPACK_IMPORTED_MODULE_5__["default"],
+  waveform: _objects_waveform__WEBPACK_IMPORTED_MODULE_6__["default"],
+  img: _objects_img__WEBPACK_IMPORTED_MODULE_8__["default"],
+  number: _objects_number__WEBPACK_IMPORTED_MODULE_7__["default"],
+  slider: _objects_slider__WEBPACK_IMPORTED_MODULE_9__["default"],
+  multislider: _objects_multislider__WEBPACK_IMPORTED_MODULE_10__["default"],
+  ptext: _objects_text__WEBPACK_IMPORTED_MODULE_11__["default"],
+  video: _objects_video__WEBPACK_IMPORTED_MODULE_12__["default"]
+}));
 
 })();
 
