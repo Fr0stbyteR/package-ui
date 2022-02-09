@@ -11,11 +11,11 @@ export default class ImgUI extends BaseUI<img, ImgProps, ImgUIState> {
     static defaultSize: [number, number] = [210, 90];
     state: ImgUIState & BaseUIState = { ...this.state, url: this.object._.url };
     render() {
-        const { objectFit, objectPosition, scroll } = this.state;
+        const { objectFit, objectPosition, scroll, opacity } = this.state;
         return (
             <BaseUI {...this.props}>
                 <div style={{ position: "absolute", width: "100%", height: "100%", display: "block", overflow: "auto" }}>
-                    <img src={this.state.url} style={{ position: "absolute", ...(scroll ? {} : { width: "100%", height: "100%" }), objectFit, objectPosition }} />
+                    <img src={this.state.url} style={{ position: "absolute", ...(scroll ? {} : { width: "100%", height: "100%" }), objectFit, objectPosition, opacity }} />
                 </div>
             </BaseUI>
         );

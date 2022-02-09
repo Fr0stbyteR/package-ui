@@ -15,6 +15,7 @@ export interface ImgProps {
     scroll: boolean;
     objectFit: "fill" | "cover" | "contain" | "none" | "scale-down";
     objectPosition: string;
+    opacity: number;
 }
 export default class img extends UIObject<{}, {}, [string | HTMLImageElement], [HTMLImageElement], [string], ImgProps, ImgUIState> {
     static description = "Display an image";
@@ -50,6 +51,12 @@ export default class img extends UIObject<{}, {}, [string | HTMLImageElement], [
             type: "string",
             default: "50% 50%",
             description: 'CSS object-position property, for example "50% 50%" or "left top"',
+            isUIState: true
+        },
+        opacity: {
+            type: "number",
+            default: 1,
+            description: "Opacity of the image (0-1)",
             isUIState: true
         }
     };
