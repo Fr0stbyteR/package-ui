@@ -2429,6 +2429,10 @@ class NumberBox extends _base__WEBPACK_IMPORTED_MODULE_2__["default"] {
       this.inlets = 1;
       this.outlets = 1;
     });
+    this.on("postInit", () => {
+      this.validateValue(this.state.value);
+      this.updateUI({ value: this.state.value });
+    });
     this.on("inlet", ({ data, inlet }) => {
       if (inlet === 0) {
         if (!(0,_sdk__WEBPACK_IMPORTED_MODULE_0__.isBang)(data)) {

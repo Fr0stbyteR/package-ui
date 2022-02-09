@@ -164,6 +164,10 @@ export default class NumberBox extends UIObject<{}, NumberBoxState, [number | Ba
             this.inlets = 1;
             this.outlets = 1;
         });
+        this.on("postInit", () => {
+            this.validateValue(this.state.value);
+            this.updateUI({ value: this.state.value });
+        })
         this.on("inlet", ({ data, inlet }) => {
             if (inlet === 0) {
                 if (!isBang(data)) {
