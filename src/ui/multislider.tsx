@@ -271,6 +271,7 @@ export default class MultisliderUI extends CanvasUI<multislider, {}, Multislider
 		} = this.state;
 
         const [width, height] = this.refCanvasUI.current.fullSize();
+        ctx.clearRect(0, 0, width, height);
 		if (setStyle === "Bar") {
 			thickness = 2;
 		}

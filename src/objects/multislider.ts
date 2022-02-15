@@ -309,5 +309,10 @@ export default class multislider extends UIObject<{}, MultisliderState, [number[
         this.on("postInit", () => {
             this.setState({ value: new Array(this.getProp("size")).fill(this.getProp("setMinMax")[0]) });
         });
+        this.on("updateState", ({ value }) => {
+            this.validateValue(value);
+            this.updateUI({ value: this.state.value });
+            this.outputValue();
+        });
     }
 }

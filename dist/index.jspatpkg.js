@@ -2221,6 +2221,11 @@ class multislider extends _base__WEBPACK_IMPORTED_MODULE_2__["default"] {
     this.on("postInit", () => {
       this.setState({ value: new Array(this.getProp("size")).fill(this.getProp("setMinMax")[0]) });
     });
+    this.on("updateState", ({ value }) => {
+      this.validateValue(value);
+      this.updateUI({ value: this.state.value });
+      this.outputValue();
+    });
   }
 }
 multislider.description = "Move a slider to output values";
@@ -2446,6 +2451,11 @@ class NumberBox extends _base__WEBPACK_IMPORTED_MODULE_2__["default"] {
     this.on("propsUpdated", () => {
       this.validateValue(this.state.value);
       this.updateUI({ value: this.state.value });
+    });
+    this.on("updateState", ({ value }) => {
+      this.validateValue(value);
+      this.updateUI({ value: this.state.value });
+      this.outlet(0, this.state.value);
     });
   }
 }
@@ -2719,6 +2729,11 @@ class slider extends _base__WEBPACK_IMPORTED_MODULE_2__["default"] {
     this.on("propsUpdated", () => {
       this.validateValue(this.state.value);
       this.updateUI({ value: this.state.value });
+    });
+    this.on("updateState", ({ value }) => {
+      this.validateValue(value);
+      this.updateUI({ value: this.state.value });
+      this.outputValue();
     });
   }
 }
@@ -4659,6 +4674,7 @@ const _MultisliderUI = class extends _sdk__WEBPACK_IMPORTED_MODULE_0__.CanvasUI 
         value
       } = this.state;
       const [width, height] = this.refCanvasUI.current.fullSize();
+      ctx.clearRect(0, 0, width, height);
       if (setStyle === "Bar") {
         thickness = 2;
       }
@@ -5178,6 +5194,7 @@ const _NumberBoxUI = class extends _sdk__WEBPACK_IMPORTED_MODULE_0__.CanvasUI {
       const leftTextOffset = LEFT_TEXT_OFFSET * triScale;
       const valueStr = this.state.inputBuffer || this._formatValue(this.state.value);
       const [width, height] = this.refCanvasUI.current.fullSize();
+      ctx.clearRect(0, 0, width, height);
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, width, height);
       ctx.font = `${fontFace === "regular" ? "" : fontFace} ${fontSize}px ${fontFamily}, sans-serif`;
@@ -5493,6 +5510,7 @@ class SliderUI extends _sdk__WEBPACK_IMPORTED_MODULE_0__.CanvasUI {
       if (!floatOutput)
         size -= 1;
       const distance = value;
+      ctx.clearRect(0, 0, width, height);
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, width, height);
       if (orientation === "Automatic" && width < height || orientation === "Vertical") {

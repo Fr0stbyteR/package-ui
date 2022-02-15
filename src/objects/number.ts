@@ -182,5 +182,10 @@ export default class NumberBox extends UIObject<{}, NumberBoxState, [number | Ba
             this.validateValue(this.state.value);
             this.updateUI({ value: this.state.value });
         });
+        this.on("updateState", ({ value }) => {
+            this.validateValue(value);
+            this.updateUI({ value: this.state.value });
+            this.outlet(0, this.state.value);
+        });
     }
 }

@@ -282,6 +282,7 @@ export default class NumberBoxUI extends CanvasUI<NumberBox, {}, NumberBoxUIStat
 
         const [width, height] = this.refCanvasUI.current.fullSize();
 		// draw background
+        ctx.clearRect(0, 0, width, height);
         ctx.fillStyle = bgColor;
         ctx.fillRect(0, 0, width, height);
 

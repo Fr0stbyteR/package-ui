@@ -163,6 +163,7 @@ export default class SliderUI extends CanvasUI<slider, {}, SliderUIState> {
         const distance = value;
 
 		// draw background
+        ctx.clearRect(0, 0, width, height);
         ctx.fillStyle = bgColor;
         ctx.fillRect(0, 0, width, height);
 

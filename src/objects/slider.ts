@@ -159,5 +159,10 @@ export default class slider extends UIObject<{}, SliderState, [number | Bang], [
             this.validateValue(this.state.value);
             this.updateUI({ value: this.state.value });
         });
+        this.on("updateState", ({ value }) => {
+            this.validateValue(value);
+            this.updateUI({ value: this.state.value });
+            this.outputValue();
+        });
     }
 }
