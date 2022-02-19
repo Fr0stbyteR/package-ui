@@ -43,7 +43,8 @@ export default class VideoUI extends BaseUI<video, VideoProps, VideoUIState> {
                 video.playbackRate = playbackRate;
             } else if (prevState.volume !== volume) {
                 video.volume = volume;
-            }if (prevState.playing !== playing) {
+            }
+            if (prevState.playing !== playing) {
                 if (playing) video.play();
                 else video.pause();
             } else if (this.lastTimeUpdate !== timestamp) {
@@ -53,11 +54,11 @@ export default class VideoUI extends BaseUI<video, VideoProps, VideoUIState> {
         }
     }
     render() {
-        const { autoPlay, controls, muted, loop } = this.state;
+        const { autoPlay, controls, muted, loop, opacity } = this.state;
         return (
             <BaseUI {...this.props}>
                 <div style={{ position: "absolute", width: "100%", height: "100%", display: "block", overflow: "auto" }}>
-                    <video src={this.state.url} style={{ position: "absolute", width: "100%", height: "100%" }} {...{ autoPlay, controls, muted, loop }} ref={this.videoRef} onTimeUpdate={this.handleTimeUpdate} />
+                    <video src={this.state.url} style={{ position: "absolute", width: "100%", height: "100%", opacity }} {...{ autoPlay, controls, muted, loop }} ref={this.videoRef} onTimeUpdate={this.handleTimeUpdate} />
                 </div>
             </BaseUI>
         );

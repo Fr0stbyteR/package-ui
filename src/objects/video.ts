@@ -18,6 +18,7 @@ export interface VideoProps {
     playbackRate: number;
     volume: number;
     loop: boolean;
+    opacity: number;
 }
 export default class video extends UIObject<{}, {}, [string | HTMLVideoElement | boolean | number | { goto: number }], [HTMLVideoElement, number], [string], VideoProps, VideoUIState> {
     static description = "Display a video";
@@ -73,6 +74,12 @@ export default class video extends UIObject<{}, {}, [string | HTMLVideoElement |
             type: "boolean",
             default: true,
             description: "Indicates whether the media element should start over when it reaches the end.",
+            isUIState: true
+        },
+        opacity: {
+            type: "number",
+            default: 1,
+            description: "Opacity of the video (0-1)",
             isUIState: true
         }
     };
