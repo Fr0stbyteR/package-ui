@@ -10,6 +10,7 @@ interface IS {
     image: PatcherImage;
     file: PersistentProjectFile;
     url: string;
+    element: HTMLImageElement;
 }
 export interface ImgProps {
     scroll: boolean;
@@ -61,7 +62,7 @@ export default class img extends UIObject<{}, {}, [string | HTMLImageElement], [
         }
     };
     static UI = ImgUI;
-    _: IS = { key: this.box.args[0]?.toString(), image: undefined, file: undefined, url: "" };
+    _: IS = { key: this.box.args[0]?.toString(), image: undefined, file: undefined, url: "", element: undefined };
     subscribe() {
         super.subscribe();
         const handleFilePathChanged = () => {
@@ -119,14 +120,14 @@ export default class img extends UIObject<{}, {}, [string | HTMLImageElement], [
         });
         this.on("inlet", async ({ data, inlet }) => {
             if (inlet === 0) {
-                if (!isBang(data)) {
-                    if (typeof data === "string") {
-                        this._.key = data;
-                        reload();
-                    } else if (typeof data === "object" && data instanceof HTMLImageElement) {
-                        this._.key = data.src;
-                        reload();
-                    }
+                if (isBang(data)) {
+                    this.outlet(0, this._.element);
+                } else if (typeof data === "string") {
+                    this._.key = data;
+                    reload();
+                } else if (typeof data === "object" && data instanceof HTMLImageElement) {
+                    this._.key = data.src;
+                    reload();
                 }
             }
         });

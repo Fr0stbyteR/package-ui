@@ -24,6 +24,7 @@ export default class VideoUI extends BaseUI<video, VideoProps, VideoUIState> {
     handleTimeUpdate = (e: React.SyntheticEvent<HTMLVideoElement>) => {
         this.object.outlet(1, e.currentTarget.currentTime);
     }
+    handleLoadedMetadata = () => this.object.outlet(0, this.videoRef.current);
     componentDidMount() {
         super.componentDidMount();
         const video = this.videoRef.current;
@@ -33,7 +34,14 @@ export default class VideoUI extends BaseUI<video, VideoProps, VideoUIState> {
             video.volume = volume;
             video.currentTime = currentTime;
             if (playing) video.play();
+            this.object._.element = video;
+            this.object.outlet(0, video);
+            video.addEventListener("loadedmetadata", this.handleLoadedMetadata);
         }
+    }
+    componentWillUnmount() {
+        super.componentWillUnmount();
+        this.videoRef.current?.removeEventListener("loadedmetadata", this.handleLoadedMetadata);
     }
     componentDidUpdate(prevProps: any, prevState: Readonly<VideoUIState & BaseUIState & AbstractUIState>) {
         const video = this.videoRef.current;
@@ -58,7 +66,7 @@ export default class VideoUI extends BaseUI<video, VideoProps, VideoUIState> {
         return (
             <BaseUI {...this.props}>
                 <div style={{ position: "absolute", width: "100%", height: "100%", display: "block", overflow: "auto" }}>
-                    <video src={this.state.url} style={{ position: "absolute", width: "100%", height: "100%", opacity }} {...{ autoPlay, controls, muted, loop }} ref={this.videoRef} onTimeUpdate={this.handleTimeUpdate} />
+                    <video ref={this.videoRef} src={this.state.url} style={{ position: "absolute", width: "100%", height: "100%", opacity }} {...{ autoPlay, controls, muted, loop }} onTimeUpdate={this.handleTimeUpdate} />
                 </div>
             </BaseUI>
         );

@@ -10,6 +10,7 @@ interface IS {
     video: PatcherVideo;
     file: PersistentProjectFile;
     url: string;
+    element: HTMLVideoElement;
 }
 export interface VideoProps {
     autoPlay: boolean;
@@ -84,7 +85,7 @@ export default class video extends UIObject<{}, {}, [string | HTMLVideoElement |
         }
     };
     static UI = VideoUI;
-    _: IS = { key: this.box.args[0]?.toString(), video: undefined, file: undefined, url: "" };
+    _: IS = { key: this.box.args[0]?.toString(), video: undefined, file: undefined, url: "", element: undefined };
     subscribe() {
         super.subscribe();
         const handleFilePathChanged = () => {
@@ -142,19 +143,19 @@ export default class video extends UIObject<{}, {}, [string | HTMLVideoElement |
         });
         this.on("inlet", async ({ data, inlet }) => {
             if (inlet === 0) {
-                if (!isBang(data)) {
-                    if (typeof data === "number" || typeof data === "boolean") {
-                        this.updateUI({ playing: !!data });
-                    } else if (typeof data === "string") {
-                        this._.key = data;
+                if (isBang(data)) {
+                    this.outlet(0, this._.element);
+                } else if (typeof data === "number" || typeof data === "boolean") {
+                    this.updateUI({ playing: !!data });
+                } else if (typeof data === "string") {
+                    this._.key = data;
+                    reload();
+                } else if (typeof data === "object") {
+                    if (data instanceof HTMLVideoElement) {
+                        this._.key = data.src;
                         reload();
-                    } else if (typeof data === "object") {
-                        if (data instanceof HTMLVideoElement) {
-                            this._.key = data.src;
-                            reload();
-                        } else if (typeof data.goto === "number") {
-                            this.updateUI({ currentTime: data.goto, timestamp: performance.now() });
-                        }
+                    } else if (typeof data.goto === "number") {
+                        this.updateUI({ currentTime: data.goto, timestamp: performance.now() });
                     }
                 }
             }
