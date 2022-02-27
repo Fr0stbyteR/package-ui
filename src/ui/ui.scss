@@ -78,6 +78,21 @@
             }
         }
     }
+    &.package-ui-preset {
+        & .preset-bubble:hover {
+            box-shadow: inset rgba(255, 255, 255, 0.5) 0px 0px 2px 2px;
+        }
+        & .preset-hovered {
+            position: absolute;
+            overflow: hidden;
+            display: flex;
+            top: 0;
+            background-color: rgba(255, 255, 255, 0.5);
+            & > span {
+                margin: 0px 4px;
+            }
+        }
+    }
 }
 .patcher.unlocked div.box.selected > div.box-ui > div.package-ui {
     &.box-ui-button {

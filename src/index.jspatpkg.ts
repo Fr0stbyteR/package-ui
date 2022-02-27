@@ -12,6 +12,7 @@ import multislider from "./objects/multislider";
 import ptext from "./objects/text";
 import video from "./objects/video";
 import panel from "./objects/panel";
+import preset from "./objects/preset";
 import "./ui/ui.scss"
 
 export default async () => ({
@@ -28,5 +29,6 @@ export default async () => ({
     multislider,
     ptext,
     video,
-    panel
+    panel,
+    preset
 });

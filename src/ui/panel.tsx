@@ -2,7 +2,7 @@ import { React, BaseUI } from "../sdk";
 import type panel from "../objects/panel";
 import type { PanelProps } from "../objects/panel";
 
-export default class PanelUI extends BaseUI<panel, PanelProps, PanelProps> {
+export default class PanelUI extends BaseUI<panel, {}, PanelProps> {
     static sizing: "horizontal" | "vertical" | "both" | "ratio" = "both";
     static defaultSize: [number, number] = [210, 210];
     render() {
