@@ -1,8 +1,17 @@
-import type { IArgsMeta, IInletsMeta, IOutletsMeta } from "@jspatcher/jspatcher/src/core/objects/base/AbstractObject";
+import type { IInletsMeta, IOutletsMeta, IPropsMeta } from "@jspatcher/jspatcher/src/core/objects/base/AbstractObject";
+import type { monaco } from "react-monaco-editor";
 import UIObject from "./base";
-import { Bang, BaseUI, CodeUI, isBang } from "../sdk";
+import { Bang, BaseUI, isBang } from "../sdk";
+import CodeUI, { CodeUIState } from "../ui/code";
 
-export default class code extends UIObject<{ value: string }, {}, [Bang, string], [string, Bang], [string], {}, { language: string; value: string }, { editorBlur: string; editorLoaded: never; change: string }> {
+export interface CodeProps {
+    language: string;
+    options: monaco.editor.IEditorOptions;
+    theme: string;
+    opacity: number;
+}
+
+export default class code extends UIObject<{ value: string }, {}, [Bang, string], [string, Bang], [], CodeProps, CodeUIState, { editorBlur: string; editorLoaded: monaco.editor.IStandaloneCodeEditor; change: string }> {
     static description = "Code Editor";
     static inlets: IInletsMeta = [{
         isHot: true,
@@ -20,12 +29,32 @@ export default class code extends UIObject<{ value: string }, {}, [Bang, string]
         type: "bang",
         description: "Bang when the code is changed"
     }];
-    static args: IArgsMeta = [{
-        type: "string",
-        optional: true,
-        default: "javascript",
-        description: "language"
-    }];
+    static props: IPropsMeta<CodeProps> = {
+        language: {
+            type: "string",
+            default: "javascript",
+            description: "Code Language",
+            isUIState: true
+        },
+        options: {
+            type: "object",
+            default: { fontSize: 12 },
+            description: "Layout Options",
+            isUIState: true
+        },
+        theme: {
+            type: "string",
+            default: "vs-dark",
+            description: "Theme",
+            isUIState: true
+        },
+        opacity: {
+            type: "number",
+            default: 1,
+            description: "Display Opacity",
+            isUIState: true
+        }
+    };
     subscribe() {
         super.subscribe();
         this.on("preInit", () => {
@@ -33,10 +62,11 @@ export default class code extends UIObject<{ value: string }, {}, [Bang, string]
             this.outlets = 2;
             if (typeof this.data.value === "undefined") this.setData({ value: "" });
         });
-        this.on("editorLoaded", () => this.updateUI({ language: this.box.args[0] || "javascript" }));
         this.on("change", () => this.outlet(1, new Bang()));
-        this.on("updateArgs", (args) => {
-            if (args[0]) this.updateUI({ language: args[0] });
+        this.on("updateProps", (props) => {
+            if ("language" in props) this.updateUI({ language: props.language });
+            if ("options" in props) this.updateUI({ options: props.options });
+            if ("theme" in props) this.updateUI({ theme: props.theme });
         });
         this.on("inlet", ({ data, inlet }) => {
             if (inlet === 0) {
