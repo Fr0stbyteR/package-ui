@@ -111,10 +111,10 @@ export default class slider extends UIObject<{}, SliderState, [number | Bang], [
 
         return Math.min(size, Math.max(0, (floatOutput ? valueIn : ~~valueIn) || 0));
     }
-    validateValue(valueIn: number) {
+    validateValue(valueIn: number, id?: string) {
         const value = this.toValidValue(valueIn);
         if (value === this.state.value) return;
-        this.setState({ value });
+        this.setState({ value }, id);
     }
     outputValue() {
         const min = this.getProp("min");
@@ -159,8 +159,8 @@ export default class slider extends UIObject<{}, SliderState, [number | Bang], [
             this.validateValue(this.state.value);
             this.updateUI({ value: this.state.value });
         });
-        this.on("updateState", ({ value }) => {
-            this.validateValue(value);
+        this.on("updateState", ({ state: { value }, id }) => {
+            this.validateValue(value, id);
             this.updateUI({ value: this.state.value });
             this.outputValue();
         });

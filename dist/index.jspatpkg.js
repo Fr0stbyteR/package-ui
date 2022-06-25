@@ -3036,11 +3036,11 @@ class multislider extends _base__WEBPACK_IMPORTED_MODULE_2__["default"] {
     const [min, max] = this.getProp("setMinMax");
     return valueIn.map((value) => Math.min(max, Math.max(min, type === "Integer" ? Math.round(value || 0) : value || 0)));
   }
-  validateValue(valueIn) {
+  validateValue(valueIn, id) {
     const value = this.toValidValue(valueIn);
     if (value === this.state.value)
       return;
-    this.setState({ value });
+    this.setState({ value }, id);
   }
   outputValue() {
     this.outlet(0, this.state.value);
@@ -3161,8 +3161,8 @@ class multislider extends _base__WEBPACK_IMPORTED_MODULE_2__["default"] {
     this.on("postInit", () => {
       this.setState({ value: new Array(this.getProp("size")).fill(this.getProp("setMinMax")[0]) });
     });
-    this.on("updateState", ({ value }) => {
-      this.validateValue(value);
+    this.on("updateState", ({ state: { value }, id }) => {
+      this.validateValue(value, id);
       this.updateUI({ value: this.state.value });
       this.outputValue();
     });
@@ -3358,11 +3358,11 @@ class NumberBox extends _base__WEBPACK_IMPORTED_MODULE_2__["default"] {
       value = Math.min(max, value);
     return value;
   }
-  validateValue(valueIn) {
+  validateValue(valueIn, id) {
     const value = this.toValidValue(valueIn);
     if (value === this.state.value)
       return;
-    this.setState({ value });
+    this.setState({ value }, id);
   }
   onChangeFromUI({ value }) {
     this.setState({ value });
@@ -3392,8 +3392,8 @@ class NumberBox extends _base__WEBPACK_IMPORTED_MODULE_2__["default"] {
       this.validateValue(this.state.value);
       this.updateUI({ value: this.state.value });
     });
-    this.on("updateState", ({ value }) => {
-      this.validateValue(value);
+    this.on("updateState", ({ state: { value }, id }) => {
+      this.validateValue(value, id);
       this.updateUI({ value: this.state.value });
       this.outlet(0, this.state.value);
     });
@@ -3876,11 +3876,11 @@ class slider extends _base__WEBPACK_IMPORTED_MODULE_2__["default"] {
       size -= 1;
     return Math.min(size, Math.max(0, (floatOutput ? valueIn : ~~valueIn) || 0));
   }
-  validateValue(valueIn) {
+  validateValue(valueIn, id) {
     const value = this.toValidValue(valueIn);
     if (value === this.state.value)
       return;
-    this.setState({ value });
+    this.setState({ value }, id);
   }
   outputValue() {
     const min = this.getProp("min");
@@ -3928,8 +3928,8 @@ class slider extends _base__WEBPACK_IMPORTED_MODULE_2__["default"] {
       this.validateValue(this.state.value);
       this.updateUI({ value: this.state.value });
     });
-    this.on("updateState", ({ value }) => {
-      this.validateValue(value);
+    this.on("updateState", ({ state: { value }, id }) => {
+      this.validateValue(value, id);
       this.updateUI({ value: this.state.value });
       this.outputValue();
     });
@@ -5243,7 +5243,11 @@ class CodeUI extends _sdk__WEBPACK_IMPORTED_MODULE_1__.BaseUI {
       this.object.emit("editorLoaded", monaco);
       monaco.onDidBlurEditorText(() => this.object.emit("editorBlur", monaco.getValue()));
     };
-    this.handleResize = () => this.state.editorLoaded ? this.codeEditor.layout() : void 0;
+    this.handleResize = () => {
+      if (this.state.editorLoaded) {
+        requestAnimationFrame(() => this.codeEditor.layout());
+      }
+    };
     this.handleChange = (value, event) => {
       this.setState({ value });
       this.object.setData({ value });
@@ -5263,6 +5267,13 @@ class CodeUI extends _sdk__WEBPACK_IMPORTED_MODULE_1__.BaseUI {
     const reactMonacoEditor = await (0,_sdk__WEBPACK_IMPORTED_MODULE_1__.getReactMonacoEditor)();
     this.editorJSX = reactMonacoEditor.default;
     this.setState({ editorLoaded: true });
+    this.editor.on("presentation", this.handleResize);
+    window.addEventListener("resize", this.handleResize);
+  }
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.handleResize);
+    this.editor.off("presentation", this.handleResize);
+    super.componentWillUnmount();
   }
   render() {
     return /* @__PURE__ */ react__WEBPACK_IMPORTED_MODULE_0__.createElement(_sdk__WEBPACK_IMPORTED_MODULE_1__.BaseUI, __spreadProps(__spreadValues({}, this.props), {

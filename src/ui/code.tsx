@@ -24,7 +24,11 @@ export default class CodeUI extends BaseUI<code, {}, CodeUIState> {
         this.object.emit("editorLoaded", monaco);
         monaco.onDidBlurEditorText(() => this.object.emit("editorBlur", monaco.getValue()));
     };
-    handleResize = () => (this.state.editorLoaded ? this.codeEditor.layout() : undefined);
+    handleResize = () => {
+        if (this.state.editorLoaded) {
+            requestAnimationFrame(() => this.codeEditor.layout());
+        }
+    };
     handleChange = (value: string, event: monaco.editor.IModelContentChangedEvent) => {
         this.setState({ value });
         this.object.setData({ value });
@@ -43,6 +47,13 @@ export default class CodeUI extends BaseUI<code, {}, CodeUIState> {
         const reactMonacoEditor = await getReactMonacoEditor();
         this.editorJSX = reactMonacoEditor.default;
         this.setState({ editorLoaded: true });
+        this.editor.on("presentation", this.handleResize);
+        window.addEventListener("resize", this.handleResize);
+    }
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.handleResize);
+        this.editor.off("presentation", this.handleResize);
+        super.componentWillUnmount();
     }
     render() {
         return (

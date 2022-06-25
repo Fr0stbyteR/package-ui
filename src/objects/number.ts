@@ -149,10 +149,10 @@ export default class NumberBox extends UIObject<{}, NumberBoxState, [number | Ba
 		if (!isNaN(max)) value = Math.min(max, value);
         return value;
     }
-    validateValue(valueIn: number) {
+    validateValue(valueIn: number, id?: string) {
         const value = this.toValidValue(valueIn);
         if (value === this.state.value) return;
-        this.setState({ value });
+        this.setState({ value }, id);
     }
     onChangeFromUI({ value }: { value: number }) {
         this.setState({ value });
@@ -182,8 +182,8 @@ export default class NumberBox extends UIObject<{}, NumberBoxState, [number | Ba
             this.validateValue(this.state.value);
             this.updateUI({ value: this.state.value });
         });
-        this.on("updateState", ({ value }) => {
-            this.validateValue(value);
+        this.on("updateState", ({ state: { value }, id }) => {
+            this.validateValue(value, id);
             this.updateUI({ value: this.state.value });
             this.outlet(0, this.state.value);
         });

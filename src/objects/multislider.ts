@@ -191,10 +191,10 @@ export default class multislider extends UIObject<{}, MultisliderState, [number[
 
         return valueIn.map(value => Math.min(max, Math.max(min, type === "Integer" ? Math.round(value || 0) : (value || 0))));
     }
-    validateValue(valueIn: number[]) {
+    validateValue(valueIn: number[], id?: string) {
         const value = this.toValidValue(valueIn);
         if (value === this.state.value) return;
-        this.setState({ value });
+        this.setState({ value }, id);
     }
     outputValue() {
         this.outlet(0, this.state.value);
@@ -309,8 +309,8 @@ export default class multislider extends UIObject<{}, MultisliderState, [number[
         this.on("postInit", () => {
             this.setState({ value: new Array(this.getProp("size")).fill(this.getProp("setMinMax")[0]) });
         });
-        this.on("updateState", ({ value }) => {
-            this.validateValue(value);
+        this.on("updateState", ({ state: { value }, id }) => {
+            this.validateValue(value, id);
             this.updateUI({ value: this.state.value });
             this.outputValue();
         });
