@@ -19,7 +19,7 @@
   "license": "GPL-3.0-or-later",
   "repository": "https://github.com/jspatcher/package-ui",
   "devDependencies": {
-    "@jspatcher/jspatcher": "0.0.9",
+    "@jspatcher/jspatcher": "^0.0.10",
     "@types/react": "^17.0.30",
     "clean-webpack-plugin": "^4.0.0",
     "color-js": "^1.0.5",

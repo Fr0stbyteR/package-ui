@@ -166,9 +166,11 @@ export default class NumberBoxUI extends CanvasUI<NumberBox, {}, NumberBoxUIStat
 		const { value, cantChange, format } = this.state;
         if (cantChange) return;
         const multiplier = format === "Decimal (Floating-Point)" ? this.multiplier : 1;
-		let newValue = this.toFixedTruncate(value, -Math.log10(multiplier));
+        const decimals = -Math.log10(multiplier);
+		let newValue = this.toFixedTruncate(value, decimals);
 		newValue = newValue - e.movementY * multiplier;
         newValue = this.object.toValidValue(newValue);
+        newValue = Math.round(newValue * 10 ** decimals) / 10 ** decimals;
         this.setState({ value: newValue });
         if (!this.state.mouseFilter && newValue !== value) this.setValueToOutput(newValue);
     };
