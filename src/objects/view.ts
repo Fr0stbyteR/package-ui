@@ -1,4 +1,4 @@
-import type { IArgsMeta, IInletsMeta, IPropsMeta } from "@jspatcher/jspatcher/src/core/objects/base/AbstractObject";
+import type { IArgsMeta, IInletsMeta, IOutletsMeta, IPropsMeta } from "@jspatcher/jspatcher/src/core/objects/base/AbstractObject";
 import type { DOMUIState } from "@jspatcher/jspatcher/src/core/objects/base/DOMUI";
 import { isBang } from "../sdk";
 import ViewUI from "../ui/view";
@@ -8,12 +8,16 @@ export interface ViewProps {
     shadow: boolean;
     containerProps: JSX.IntrinsicAttributes & React.ClassAttributes<HTMLDivElement> & React.HTMLAttributes<HTMLDivElement>;
 }
-export default class view extends UIObject<{}, { children: ChildNode[] }, [string | Element], [], [string], ViewProps, DOMUIState> {
+export default class view extends UIObject<{}, { children: ChildNode[] }, [string | Element], [ChildNode[]], [string], ViewProps, DOMUIState> {
     static description = "View HTML Element";
     static inlets: IInletsMeta = [{
         isHot: true,
         type: "anything",
         description: "HTML string or HTMLElement object to view"
+    }];
+    static outlets: IOutletsMeta = [{
+        type: "object",
+        description: "Array of HTML nodes created"
     }];
     static args: IArgsMeta = [{
         type: "string",
@@ -40,7 +44,7 @@ export default class view extends UIObject<{}, { children: ChildNode[] }, [strin
         super.subscribe();
         this.on("preInit", () => {
             this.inlets = 1;
-            this.outlets = 0;
+            this.outlets = 1;
         });
         const handleUpdateArgs = (args: [string?]) => {
             if (typeof args[0] === "string") {
@@ -48,6 +52,7 @@ export default class view extends UIObject<{}, { children: ChildNode[] }, [strin
                 template.innerHTML = args[0];
                 this._.children = Array.from(template.content.children);
                 this.updateUI({ children: this._.children });
+                this.outlet(0, this._.children);
             }
         };
         this.on("postInit", () => handleUpdateArgs(this.args));
@@ -63,6 +68,7 @@ export default class view extends UIObject<{}, { children: ChildNode[] }, [strin
                         this._.children = [data];
                     }
                     this.updateUI({ children: this._.children });
+                    this.outlet(0, this._.children);
                 }
             }
         });
